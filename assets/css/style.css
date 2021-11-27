@@ -129,7 +129,7 @@ p {
 }
 
 .homepage__wrapper {
-    /* background-image: url('../immagini/Mong.png'); */
+    background-image: url('../immagini/Mong.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
