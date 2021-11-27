@@ -10,7 +10,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    /* height: 100vh; */
 }
 
 /* -------------------------------------------------------------------------- */
@@ -19,6 +19,22 @@ html, body {
 .pointer {
     cursor: pointer;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                              Ridefinizioni BS                              */
+/* -------------------------------------------------------------------------- */
+
+.btn {
+    border-radius: 2px;
+    padding: 8px 18px;
+}
+
+.btn-primary {
+    background-color: var(--verdeForesta);
+    border-color: var(--verdeForesta);
+    text-transform: uppercase;
+}
+
 /* 
 @font-face {
     font-family: Hearing;
@@ -40,10 +56,24 @@ h1 {
 
 .title {}
 
+.main_text {
+    margin-top: 50px;
+    margin-bottom: 16px;
+}
+
+.main_text p, .header {
+    font-family: 'Hearing', sans-serif;
+    color: var(--bluNavy);
+}
+
+.main_text p:nth-child(2), .main_text p:nth-child(3) {
+    font-size: 20px;
+    /* margin: 0; */
+}
+
 .header {
     font-size: 65px;
     letter-spacing: 0.07rem;
-    font-family: 'Hearing', sans-serif;
 }
 
 p {
@@ -51,9 +81,16 @@ p {
     font-size: 1rem;
     line-height: 150%;
     letter-spacing: 0.02rem;
+    font-family: 'Manrope', sans-serif;
+    color: var(--gordonsGreen);
 }
 
-.navbar{
+.containerKomorebi {
+    width: calc(100vw - 40px);
+    margin: 0 auto;
+}
+
+.navbar {
     height: 50px;
 }
 
@@ -70,13 +107,25 @@ p {
     right: -100%;
     top: 0;
 }
+
 .menu--close {
     /* display: none; */
+    display: none;
     animation: slide-left-close 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
 .menu--open {
     /* display: block; */
     animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.homepage__wrapper {
+    background-image: url('../immagini/Mong.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+
 }
 
 #ul-homepage {
@@ -110,6 +159,7 @@ p {
     margin-right: 20px;
     border-radius: 0 1px 1px 0;
 }
+
 #ul-homepage>li.active>a>span:nth-child(1) {
     background: var(--melaVerde);
 }
@@ -127,15 +177,29 @@ p {
     0% {
         right: -100%;
     }
+
     100% {
-      right: 0%;
+        right: 0%;
     }
-  }
-  @keyframes slide-left-close {
+}
+
+@keyframes slide-left-close {
     0% {
         right: 0%;
     }
+
     100% {
-      right: -100%;
+        right: -100%;
     }
-  }
+}
+
+#alberelli {
+    background-image: url('../immagini/skyline2.png');
+    background-repeat: repeat-x;
+    height: 100px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    object-fit: scale-down;
+    /* background-color: rebeccapurple; */
+}
