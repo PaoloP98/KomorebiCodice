@@ -13,7 +13,7 @@ btnMenuOpen.addEventListener("click", () => {
 
 $(document).scroll(function () {
   if ($('#alberelli').offset().top + $('#alberelli').height()
-    >= $('footer').offset().top - 10) {
+    >= $('footer').offset().top) {
     $('#alberelli').css('position', 'absolute');
   }
   if ($(document).scrollTop() + window.innerHeight < $('footer').offset().top) {
