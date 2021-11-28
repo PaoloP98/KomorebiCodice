@@ -18,21 +18,33 @@
 <body>
     <header>
         <div class="navbar">
-            <img class="logo" src="./assets/logo.png">
+            <a href="index.html"><img class="logo" src="./assets/logo.png"></a>
             <img id="btn_menu_open" src="assets/icone/menu.svg">
         </div>
         <div class="menu menu--close" id="menu">
             <div id="btn_menu_close" class="d-flex justify-content-end p-3 pointer">
                 <img class="icon-menu-mobile" src="./assets/icone/close.svg" />
             </div>
-            <ul id="ul-homepage">
-                <li><a href="index.html"><span></span><span>Home</span></a></li>
-                <li class="active"><a src="#"><span></span><span>Esplora l'isola</span></a></li>
-                <li><a src="#"><span></span><span>Vivere a Komorebi</span></a></li>
-                <li><a src="#"><span></span><span>Come raggiungerci</span></a></li>
-                <li><a src="#"><span></span><span>Prenota un'esperienza</span></a></li>
-                <li><a src="#"><span></span><span>Adotta un albero</span></a></li>
-            </ul>
+            <div class="mobile_menu_wrapper">
+                <ul class="mobile_menu_ul">
+                    <li><a href="index.html"><span></span><span>Home</span></a></li>
+                    <li><a class="dropdown-toggle" data-toggle="collapse" href="#collapseVivereAKomorebi" role="button"
+                            aria-expanded="false" aria-controls="collapseVivereAKomorebi"><span></span><span>Esplora
+                                l'isola</span></a></li>
+                    <li class="panel">
+                        <div class="collapse" id="collapseVivereAKomorebi">
+                            <ul class="mobile_menu_ul ml-2">
+                                <li class="active"><a href="#"><span></span><span>La sorgente</span></a></li>
+                                <li><a href="#"><span></span><span>Choose to reuse</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#"><span></span><span>Vivere a Komorebi</span></a></li>
+                    <li><a href="#"><span></span><span>Come raggiungerci</span></a></li>
+                    <li><a href="#"><span></span><span>Prenota un'esperienza</span></a></li>
+                    <li><a href="#"><span></span><span>Adotta un albero</span></a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -99,8 +111,8 @@
                     </div>
                 </div>
             </div>
-            
-           
+
+
         </div>
         <div id="alberelli"></div>
     </div>
