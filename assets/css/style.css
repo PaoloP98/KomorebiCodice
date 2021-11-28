@@ -97,6 +97,7 @@ p {
     width: calc(100vw - 40px);
     min-height: 100vh;
     margin: 0 auto;
+    position: relative;
 }
 
 .navbar {
@@ -216,7 +217,9 @@ p {
     background-image: url('../immagini/skyline2.png');
     background-repeat: repeat-x;
     height: 100px;
-    width: 100vw;
+    /* width: 100vw; */
+    width: calc(100% + 40px);
+    margin-left: -20px;
     position: fixed;
     bottom: 0;
     object-fit: scale-down;
