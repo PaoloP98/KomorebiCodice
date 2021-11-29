@@ -37,9 +37,9 @@ html, body {
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-    color: var(--resina)!important;
-    background-color: var(--melaVerde)!important;
-    border-color: var(--melaVerde)!important;
+    color: var(--resina) !important;
+    background-color: var(--melaVerde) !important;
+    border-color: var(--melaVerde) !important;
 }
 
 /* 
@@ -64,6 +64,7 @@ h1 {
 h2 {
     font-size: 25px;
     font-family: 'Hearing', sans-serif;
+    line-height: 3px;
 }
 
 .subtitle {
@@ -106,6 +107,7 @@ p {
     min-height: 100vh;
     margin: 0 auto;
     position: relative;
+    padding: 0 0 200px 0;
 }
 
 
@@ -144,10 +146,12 @@ header {
     /* Per centrarlo non posso usare o auto perché è fixed, quindi */
     background-color: var(--resina);
 }
+
 header .logo {
     height: 30px;
     width: 30px;
 }
+
 .menu {
     background-color: var(--bluNavy);
     height: 100vh;
@@ -184,6 +188,10 @@ header .logo {
 
 .mobile_menu_ul {
     padding: 0;
+}
+
+.mobile_menu_ul .sub_menu {
+    margin-left: 40px;
 }
 
 .mobile_menu_ul>li {
@@ -338,16 +346,112 @@ header .logo {
     margin: 40px 0;
 }
 
-@media (min-width:768px) {
+/* -------------------------------------------------------------------------- */
+/*                                    Card                                    */
+/* -------------------------------------------------------------------------- */
 
-    #li_servizi,.panel, #btn_menu_open, #btn_menu_close {
-        display: none!important;
+.hero_img {
+    background-image: url("../immagini/source/hero.png");
+    height: 70vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero_overlay {
+    background: rgba(77, 191, 202, 0.8);
+    box-shadow: 4px 4px 10px rgba(5, 10, 4, 0.1);
+    border-radius: 5px;
+    width: 90%;
+    padding: 30px;
+}
+
+.hero_overlay h1 {
+    font-size: 30px;
+    letter-spacing: 0.03em;
+}
+
+
+.card_1_wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.card_1_img {
+    width: 100%;
+    height: 250px;
+    background-color: #f2d4d4;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.card_1_img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card_1_txt_wrapper {
+    padding: 25px;
+    min-height: auto;
+    background-color: var(--resina);
+    box-shadow: 4px 4px 10px rgba(5, 10, 4, 0.1);
+    padding: 40px;
+    /* position: absolute; */
+    /* top: 200
+px
+; */
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: -50px;
+    display: block;
+    text-align: center;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    /* min-height: 322px; */
+}
+
+.card_1_title {
+    color: var(--verdeForesta);
+}
+
+.card_1_txt {
+    display: none;
+}
+
+.fauna_card_wrapper .card_1_txt_wrapper {
+    background-color: var(--verdeForesta);
+
+}
+
+.fauna_card_wrapper .card_1_txt_wrapper .card_1_title {
+    color: var(--resina);
+}
+.fauna_card_wrapper .card_1_txt_wrapper .card_1_txt {
+    color: var(--resina);
+}
+
+
+@media (min-width:992px) {
+
+    #li_servizi, .panel, #btn_menu_open, #btn_menu_close {
+        display: none !important;
     }
+
     .menu--close {
-        display: block!important;
+        display: block !important;
         animation: none;
     }
-    
+
     .menu {
         /* width: 100%; */
         height: auto;
@@ -355,11 +459,13 @@ header .logo {
         position: initial;
         background-color: transparent;
         box-shadow: none;
-        
+
     }
-    .mobile_menu_wrapper{
+
+    .mobile_menu_wrapper {
         margin: 0;
     }
+
     header {
         height: 100px;
         width: 100%;
@@ -369,30 +475,35 @@ header .logo {
         align-items: center;
         padding: 0 80px;
     }
+
     header .logo {
         height: 40px;
         width: 40px;
-        
+
     }
-    .mobile_menu_ul{
+
+    .mobile_menu_ul {
         margin: 0;
         display: flex;
         justify-content: space-between;
         margin-left: 130px;
     }
 
-    .mobile_menu_ul>li, .mobile_menu_ul>li.active{
+    .mobile_menu_ul>li, .mobile_menu_ul>li.active {
         display: inline-block;
-        margin:0;
+        margin: 0;
         padding: 0 15px;
     }
+
     .mobile_menu_ul>li a {
         color: var(--bluNavy);
         /* padding: 0 30px; */
     }
+
     .mobile_menu_ul>li.active a {
         color: var(--verdeForesta);
     }
+
     .mobile_menu_ul>li span:nth-child(1) {
         display: none;
     }
@@ -404,8 +515,9 @@ header .logo {
         min-height: 100vh;
         margin: 0 auto;
         position: relative;
+
     }
-    
+
     #alberelli {
         background-image: url('../immagini/skyline2.png');
         background-repeat: repeat-x;
@@ -431,8 +543,28 @@ header .logo {
         align-items: flex-start;
         justify-content: space-around;
     }
-    .separator{
+
+    .separator {
         display: none;
+    }
+
+
+    /* -------------------------------------------------------------------------- */
+    /*                                    Card                                    */
+    /* -------------------------------------------------------------------------- */
+    .card_1_img {
+        height: 420px;
+    }
+    .card_1_txt_wrapper {
+        text-align: start;
+    }
+
+    .card_1_title {
+        display: none;
+    }
+
+    .card_1_txt {
+        display: block;
     }
 
 }
