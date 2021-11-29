@@ -11,11 +11,16 @@ function closeMenu() {
   overlay.classList.remove("active");
   $('body').css('overflow', 'auto');
 }
-$(".card_1_wrapper").click(function () {
-  if($('.card_1_txt:visible'))
-  {
+function isVisible(selector) {
+  if ($(selector).css('display') == 'none' || $(selector).css("visibility") == "hidden") {
     return;
   }
+}
+$(".card_1_wrapper").click(function () {
+  if (isVisible('.card_1_txt')) {
+    return;
+  }
+
   let name = $(this).attr('data-name');
   if (name == "felce") {
     $("#modal_detail_body").html(
