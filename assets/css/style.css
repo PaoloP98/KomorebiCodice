@@ -397,6 +397,7 @@ header .logo {
 .card_1_wrapper {
     position: relative;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 
@@ -570,6 +571,9 @@ px
     /* -------------------------------------------------------------------------- */
     /*                                    Card                                    */
     /* -------------------------------------------------------------------------- */
+    .card_1_wrapper {
+        cursor: initial;
+    }
     .card_1_img {
         height: 420px;
     }

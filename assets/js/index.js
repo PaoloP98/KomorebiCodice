@@ -12,6 +12,10 @@ function closeMenu() {
   $('body').css('overflow', 'auto');
 }
 $(".card_1_wrapper").click(function () {
+  if($('.card_1_txt:visible'))
+  {
+    return;
+  }
   let name = $(this).attr('data-name');
   if (name == "felce") {
     $("#modal_detail_body").html(
@@ -56,7 +60,7 @@ $(".card_1_wrapper").click(function () {
     </p>
     `
     );
-    else if (name == "tucano")
+  else if (name == "tucano")
     $("#modal_detail_body").html(
       `
     <p>
@@ -70,7 +74,7 @@ $(".card_1_wrapper").click(function () {
     </p>
     `
     );
-    else if (name == "lepre")
+  else if (name == "lepre")
     $("#modal_detail_body").html(
       `
     <p>
@@ -84,7 +88,7 @@ $(".card_1_wrapper").click(function () {
     </p>
     `
     );
-    else if (name == "scimmiaRagno")
+  else if (name == "scimmiaRagno")
     $("#modal_detail_body").html(
       `
     <p>
