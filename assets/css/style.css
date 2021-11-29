@@ -42,6 +42,23 @@ html, body {
     border-color: var(--melaVerde) !important;
 }
 
+.modal-header {
+    border-bottom: none;
+}
+.modal-header button.close {
+    font-size: 24px;
+    color: var(--resina);
+}
+
+.modal-content {
+    background-color: var(--verdeForesta);
+}
+
+.modal-content p {
+    color: var(--resina);
+    font-size: 18px;
+}
+
 /* 
 @font-face {
     font-family: Hearing;
@@ -436,6 +453,7 @@ px
 .fauna_card_wrapper .card_1_txt_wrapper .card_1_title {
     color: var(--resina);
 }
+
 .fauna_card_wrapper .card_1_txt_wrapper .card_1_txt {
     color: var(--resina);
 }
@@ -555,6 +573,7 @@ px
     .card_1_img {
         height: 420px;
     }
+
     .card_1_txt_wrapper {
         text-align: start;
     }

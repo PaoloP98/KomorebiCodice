@@ -75,27 +75,27 @@
             <h2 style=" color: var(--verdeForesta);">Flora</h2>
             <div class="source_card_wrapper row " style="margin-top: 20px;">
                 <div class="col-md-6 col-lg-4">
-                    <div class="card_1_wrapper">
+                    <div class="card_1_wrapper" data-name="felce">
                         <div class="card_1_img">
                             <img src="./assets/immagini/explore/felceVerde.png">
                         </div>
                         <div class="card_1_txt_wrapper">
                             <h2 class="card_1_title">felce verde</h2>
                             <p class="card_1_txt">
-                                La <b>Felce Verde</b> è una pianta molto antica, che produce particolari foglie, dette fronde,
+                                La <b>Felce Verde</b> è una pianta molto antica, che produce particolari foglie, dette
+                                fronde,
                                 lunghi piccioli portano un'unica foglia allungata, a margine frastagliato.
                                 Sull’isola coesistono numerosissime specie di questa pianta che possono trovare
                                 tranquillamente posto nei luoghi più umidi, freddi e bui dei giardini o terrazzi, senza
                                 temere il gelo o le intemperie. Ecco perché l’isola ne viene ricoperta soprattutto nella
                                 stagione invernale.
-
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4">
-                    <div class="card_1_wrapper">
+                    <div class="card_1_wrapper" data-name="baobab">
                         <div class="card_1_img">
                             <img src="./assets/immagini/explore/baobab.png">
                         </div>
@@ -114,14 +114,15 @@
                 </div>
 
                 <div class="col-md-6 col-lg-4">
-                    <div class="card_1_wrapper">
+                    <div class="card_1_wrapper" data-name="fioresambuco">
                         <div class="card_1_img">
                             <img src="./assets/immagini/explore/fioreDiSambuco.png">
                         </div>
                         <div class="card_1_txt_wrapper">
                             <h2 class="card_1_title">Fiore di Sambuco</h2>
                             <p class="card_1_txt">
-                                Il <b>fiore di Sambuco</b>  è una delle particolarità dell’isola. A Komorebi esiste una vera e
+                                Il <b>fiore di Sambuco</b> è una delle particolarità dell’isola. A Komorebi esiste una
+                                vera e
                                 propria coltivazione di questi fiori, ampiamente utilizzati per le loro numerose
                                 proprietà. Vengono infatti essicati e usati come infuso curativo, trasformati in lozioni
                                 oppure ancora in sciroppi rinfrescanti e dissetanti.
@@ -142,10 +143,11 @@
                         <div class="card_1_img">
                             <img src="./assets/immagini/explore/tucano.png">
                         </div>
-                        <div class="card_1_txt_wrapper">
+                        <div class="card_1_txt_wrapper" data-name="tucano">
                             <h2 class="card_1_title">tucano</h2>
                             <p class="card_1_txt">
-                                Il <b>tucano</b> è un uccello originario del Sud America. Il suo nome scientifico è Ramphastos
+                                Il <b>tucano</b> è un uccello originario del Sud America. Il suo nome scientifico è
+                                Ramphastos
                                 toco anche detto tucano toco, ma viene semplicemente chiamato tucano. Questa specie è la
                                 più grande della sua famiglia con il becco che può raggiungere i 20cm di lunghezza. E’
                                 principalmente frugivoro, tuttavia, capita di vederlo nutrirsi di piccoli insetti. Vive
@@ -157,14 +159,15 @@
                 </div>
 
                 <div class="col-md-6 col-lg-4">
-                    <div class="card_1_wrapper">
+                    <div class="card_1_wrapper" data-name="lepre">
                         <div class="card_1_img">
                             <img src="./assets/immagini/explore/lepre.png">
                         </div>
                         <div class="card_1_txt_wrapper">
                             <h2 class="card_1_title">lepre selvatica</h2>
                             <p class="card_1_txt">
-                                La <b>lepre selvatica</b>, detta anche lepre comune, è una specie delle leproidi originaria
+                                La <b>lepre selvatica</b>, detta anche lepre comune, è una specie delle leproidi
+                                originaria
                                 dell’Europa e dell’Asia. Questa specie ha una forma molto sinuosa e la sua lunghezza
                                 varia dai 50 ai 65cm. Le zampe posteriori sono molto sviluppate così come l’udito.
                                 La lepre ha una dieta principalmente erbivora. Le sue abitudini sono crepuscolari e
@@ -176,14 +179,15 @@
                 </div>
 
                 <div class="col-md-6 col-lg-4">
-                    <div class="card_1_wrapper">
+                    <div class="card_1_wrapper" data-name="scimmiaRagno">
                         <div class="card_1_img">
                             <img src="./assets/immagini/explore/scimmiaRagno.png">
                         </div>
                         <div class="card_1_txt_wrapper">
                             <h2 class="card_1_title">scimmia ragno</h2>
                             <p class="card_1_txt">
-                                La <b>scimmia ragno</b> chiamata Ateles paniscus è la scimmia più agile del mondo. I suoi
+                                La <b>scimmia ragno</b> chiamata Ateles paniscus è la scimmia più agile del mondo. I
+                                suoi
                                 lunghi arti l’aiutano a spostarsi da albero ad albero. Si nutre quasi esclusivamente di
                                 frutta, ma, nel caso non sia disponibile, può mangiare anche foglie. Ha una dieta molto
                                 variegata quindi il suo habitat si trova nelle vicinanze degli alberi da frutto. Vive
@@ -204,6 +208,8 @@
 
         <div id="alberelli"></div>
     </div>
+
+
 
     <div class="overlay" id="overlay"></div>
     <footer class="footer">
@@ -235,6 +241,23 @@
             <h3>Copyright - Komorebi 2021</h3>
         </div>
     </footer>
+
+
+    <div class="modal fade" id="modal_detail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal_detail_body">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
