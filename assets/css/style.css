@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/hearing');
+
 :root {
     --resina: #f1f8f0;
     --gordonsGreen: #050a04;
@@ -10,6 +12,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-color: var(--resina);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -45,6 +48,7 @@ html, body {
 .modal-header {
     border-bottom: none;
 }
+
 .modal-header button.close {
     font-size: 24px;
     color: var(--resina);
@@ -65,11 +69,8 @@ html, body {
     src: url(../font/Hearing.css);
 } */
 
-@import url('http://fonts.cdnfonts.com/css/hearing');
 
-body {
-    background-color: var(--resina);
-}
+
 
 /* -------------------------------------------------------------------------- */
 /*                                    FONT                                    */
@@ -128,10 +129,11 @@ p {
 }
 
 
-header{
+header {
     box-shadow: 0px 4px 4px rgba(5, 10, 4, 0.1);
     /* filter: drop-shadow(0px 4px 4px rgba(5, 10, 4, 0.1)); */
 }
+
 #btn_menu_open {
     filter: invert(13%) sepia(51%) saturate(6978%) hue-rotate(186deg) brightness(95%) contrast(98%);
 }
@@ -577,6 +579,7 @@ px
     .card_1_wrapper {
         cursor: initial;
     }
+
     .card_1_img {
         height: 420px;
     }
