@@ -129,7 +129,7 @@ overlay.addEventListener("click", () => {
 $(document).scroll(function () {
   if ($('#alberelli').offset().top + $('#alberelli').height()
     >= $('footer').offset().top) {
-    $('#alberelli').css('position', 'absolute');
+    $('#alberelli').css({"position": "absolute", "bottom": "-1px"});
   }
   if ($(document).scrollTop() + window.innerHeight < $('footer').offset().top) {
     $('#alberelli').css('position', 'fixed'); // restore when you scroll up

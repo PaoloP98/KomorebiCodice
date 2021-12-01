@@ -373,7 +373,7 @@ header .logo {
 .hero_img {
     background-image: url("../immagini/source/hero.png");
     height: 70vh;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
