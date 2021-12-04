@@ -508,7 +508,13 @@ px
         margin: 0;
         display: flex;
         justify-content: space-between;
-        margin-left: 130px;
+        margin-left: 10vw;
+    }
+    .mobile_menu_ul .sub_menu {
+        display: none;
+    }
+    .mobile_menu_ul>li {
+        font-size: 18px;
     }
 
     .mobile_menu_ul>li, .mobile_menu_ul>li.active {
