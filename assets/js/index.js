@@ -135,3 +135,8 @@ $(document).scroll(function () {
     $('#alberelli').css('position', 'fixed'); // restore when you scroll up
   }
 });
+
+$('#galleryEsploraIsola').carousel
+({
+    interval: 0
+})

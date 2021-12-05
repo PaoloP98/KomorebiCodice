@@ -477,7 +477,7 @@ px
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 60px;
+    padding: 3%;
 }
 .gallery_arrow img {
     height: fit-content;
@@ -620,4 +620,20 @@ px
         display: block;
     }
 
+}
+
+.carousel-control-prev{
+    background: -webkit-linear-gradient(left,rgba(5,10,4, 0.8) 0,transparent 90%);
+}
+
+.carousel-control-next{
+    background: -webkit-linear-gradient(right,rgba(5,10,4, 0.8) 0,transparent 90%);
+}
+
+.carousel-control-prev {
+    opacity: 1;
+}
+
+.carousel-control-next {
+    opacity: 1;
 }
