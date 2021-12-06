@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reach_us.css">
 
     <link rel="preload" href="assets/font/HearingRegular.woff2" as="font" type="font/woff2" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
@@ -36,7 +37,7 @@
                     <li class="sub_menu" style="height: auto;">
                         <ul class="mobile_menu_ul ml-2">
                             <li><a href="source.html"><span></span><span>La sorgente</span></a></li>
-                            <li><a href="#"><span></span><span>Choose to reuse</span></a></li>
+                            <li><a href="choose_to_reuse.html"><span></span><span>Choose to reuse</span></a></li>
                         </ul>
                     </li>
                     <li><a href="#"><span></span><span>Vivere a Komorebi</span></a></li>
@@ -56,17 +57,24 @@
             viaggi sono gestite dalle agenzie di trasporto convenzionate con Komorebi. Inoltre, grazie a degli accordi
             con quest’ultime, per ogni metro cubo di anidride carbonica emessa nell’ambiente viene piantato un albero.
         </p>
-        <div class="mezzo">
-            <h2 style="margin-top: 30px; color:var(--verdeForesta);">Mongolfiera</h2>
-            <div class="immagini" style="margin-top: 30px;">
-                <img src="assets/immagini/reach_us/Mongolfiera.png" style="height: 200px;">
-                <img src="assets/immagini/reach_us/Cloud.png">
+        <div class="transport_carousel_wrapper">
+            <div class="means_of_transport initial">
+                <div class="immagini"
+                    style="margin-top: 30px;height: 200px;width: 100%;background-color: rebeccapurple;">
+                    <!-- <img src="assets/immagini/reach_us/Mongolfiera.png" style="height: 200px;">
+                <img src="assets/immagini/reach_us/Cloud.png"> -->
+                </div>
+                <h2 style="margin-top: 30px;color:var(--verdeForesta);">Mongolfiera</h2>
+                <p>
+                    La mongolfiera è il mezzo di trasporto più amato per raggiungere Komorebi. Dal punto di vista della
+                    velocità è sicuramente quello più lento, ma è quello che permette di godere appieno del paesaggio e
+                    magari scattare anche qualche foto ricordo. Naturalmente è completamente eco-friendly.
+                </p>
             </div>
-            <p>La mongolfiera è il mezzo di trasporto più amato per raggiungere Komorebi. Dal punto di vista della
-                velocità è sicuramente quello più lento, ma è quello che permette di godere appieno del paesaggio e
-                magari scattare anche qualche foto ricordo. Naturalmente è completamente eco-friendly.</p>
-
-
+        </div>
+        <div class="d-flex justify-content-between px-4">
+            <img id="reach_us_back_btn" src="./assets/icone/backLeaf.png">
+            <img id="reach_us_forward_btn" src="./assets/icone/forwardLeaf.png">
         </div>
         <div id="alberelli"></div>
     </div>
@@ -115,6 +123,7 @@
         crossorigin="anonymous"></script>
 
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/reach_us.js"></script>
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

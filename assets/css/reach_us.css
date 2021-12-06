@@ -1,0 +1,26 @@
+.means_of_transport .immagini {
+    background-image: url("../immagini/reach_us/Sky.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.transport_carousel_wrapper {
+    overflow: hidden;
+}
+
+.transport_carousel_wrapper * {
+    box-sizing: border-box;
+}
+
+.transport_carousel_wrapper .means_of_transport {
+    transform-style: preserve-3d;
+    opacity: 0;
+    transition: transform .5s, opacity .5s, z-index .5s;
+}
+.transport_carousel_wrapper .means_of_transport.initial,
+.transport_carousel_wrapper .means_of_transport.active {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
