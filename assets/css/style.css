@@ -404,8 +404,9 @@ header .logo {
     padding: 30px;
 }
 
-
-
+.hero_overlay.hero_overlay--choose_to_reuse{
+    background: rgba(174, 220, 152, 0.8);
+}
 
 .card_1_wrapper {
     position: relative;
@@ -666,6 +667,7 @@ px
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
  /* -------------------------------------------------------------------------- */
  /*                                    Gallery                                 */
  /* --------------------------------------------------------------------------  */
