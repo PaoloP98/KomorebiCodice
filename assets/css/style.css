@@ -384,7 +384,7 @@ header .logo {
 /* -------------------------------------------------------------------------- */
 
 .hero_img {
-    background-image: url("../immagini/source/hero.png");
+    
     height: 70vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -394,6 +394,12 @@ header .logo {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+.hero_img.hero_img--choose_to_reuse {
+    background-image: url("../immagini/choose_to_reuse/hero.jpg");
+}
+.hero_img.hero_img--source{
+    background-image: url("../immagini/source/hero.png");
 }
 
 .hero_overlay {
