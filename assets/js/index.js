@@ -135,3 +135,10 @@ $(document).scroll(function () {
     $('#alberelli').css('position', 'fixed'); // restore when you scroll up
   }
 });
+
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+});
