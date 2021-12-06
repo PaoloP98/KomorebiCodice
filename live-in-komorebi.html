@@ -28,7 +28,7 @@
             </div>
             <div class="mobile_menu_wrapper">
                 <ul class="mobile_menu_ul">
-                    <li class="active"><a href="#"><span></span><span>Home</span></a></li>
+                    <li><a href="index.html"><span></span><span>Home</span></a></li>
                     <li><a href="explore.html"><span></span><span>Esplora l'isola</span></a></li>
                     <li class="sub_menu" style="height: auto;">
                         <ul class="mobile_menu_ul">
@@ -36,8 +36,9 @@
                             <li><a href="#"><span></span><span>Choose to reuse</span></a></li>
                         </ul>
                     </li>
-                    <li><a href="live-in-komorebi.html"><span></span><span>Vivere a Komorebi</span></a></li>
-                    <li><a href="#"><span></span><span>Come raggiungerci</span></a></li>
+                    <li class="active"><a href="live-in-komorebi.html"><span></span><span>Vivere a Komorebi</span></a>
+                    </li>
+                    <li><a href="reach_us.html"><span></span><span>Come raggiungerci</span></a></li>
                     <li><a href="#"><span></span><span>Prenota un'esperienza</span></a></li>
                     <li><a href="#"><span></span><span>Adotta un albero</span></a></li>
                 </ul>
@@ -45,23 +46,39 @@
         </div>
     </header>
 
-    <div class="homepage__wrapper">
-        <div class="containerKomorebi">
+    <div class="containerKomorebi">
+        <h1 style="margin-top: 20px; color: var(--verdeForesta);">Vivere a Komorebi</h1>
+        <p style="margin-top: 10px;">
+            Vivere a Komorebi è un’esperienza unica, sia per il forte contatto con la natura, sia per i vari servizi
+            presenti in tutta l’isola. Infatti, sono diverse le stazioni, i bar e i ristoranti che permettono di godere
+            a pieno dell’isola, senza però rinunciare alle comodità e agli intrattenimenti di una qualsiasi città
+            turistica.
+        </p>
 
-            <div class="main_text">
-                <h1 class="header">Komorebi</h1>
-                <p class="m-0">51°40′N 39°13′E</p>
-                <p class="m-0">9374m slm</p>
-            </div>
-            <p>Komorebi è un’isola fluttuante situata sopra il Sud America, dove è possibile ammirare una biodiversità
-                difficile da replicane in altre zone della terra. Soggiornare o anche solo visitare l’isola ti fa
-                provare sensazioni uniche, che vi invitiamo a provare almeno una volta, per immortalare nella tua
-                memoria questa magica esperienza.
-            </p>
-            <a href="explore.html" class="btn btn-primary mt-4">Esplora l'isola</a>
-            <div id="alberelli"></div>
-        </div>
+        <!--qui manca da mettere la mappa con le icone-->
 
+
+        <h2 style="margin-top: 30px; margin-bottom: 20px; color:var(--verdeForesta);">La sorgente</h2>
+        <img src="./assets/immagini/live-in-komorebi/img-sorgente.png" class="d-block w-100" alt="img-sorgente">
+        <p style="margin-top: 20px;">Al centro dell’isola è presente la sorgente principale da cui la comunità di
+            Komorebi ricava energia
+            idroelettrica. Oltre alla sorgente principale, sono presenti altre due sorgenti: la sorgente Verde e la
+            sorgente Nascosta.
+            Sono fonti di acqua potabile ed ognuna presenta caratteristiche diverse che le rendono uniche al mondo.
+        </p>
+        <a href="#" class="btn btn-primary mt-4">Scopri di più</a>
+
+        <h2 style="margin-top: 30px; margin-bottom: 20px; color:var(--verdeForesta);">Choose to reuse</h2>
+        <img src="./assets/immagini/live-in-komorebi/img-choose-to-reuse.png" class="d-block w-100"
+            alt="img-choose-to.reuse">
+        <p style="margin-top: 20px;">Gli abitanti di Komorebi hanno molto a cuore la tematica ambientale. Choose to
+            reuse è un servizio dell’isola che dà nuova vita e valore ai rifiuti tramite un riuso creativo noto come
+            “upcycling”. I rifiuti vengono raccolti e selezionati dagli abitanti, per poi essere trasformati in nuovi
+            prodotti riutilizzabili. I punti di raccolta sono collocati in vari punti strategici dell’isola e ognuno
+            svolge attività di riuso diverso.
+        </p>
+        <a href="#" class="btn btn-primary mt-4">Scopri di più</a>
+        <div id="alberelli"></div>
     </div>
 
     <div class="overlay" id="overlay"></div>
@@ -95,7 +112,23 @@
         </div>
     </footer>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+
+    <div class="modal fade" id="modal_detail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal_detail_body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -112,5 +145,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     -->
 </body>
-
-</html>
