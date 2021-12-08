@@ -136,7 +136,11 @@ p {
     padding: 0 0 200px 0;
 }
 
-
+.text-icon-map {
+    font-size: 24px;
+    color: var(--verdeForesta);
+    font-weight: bold;
+}
 
 
 
@@ -697,4 +701,26 @@ px
 .carousel-control-next {
     opacity: 1;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                    icon-map                                */
+/* -------------------------------------------------------------------------- */
+
+.carousel{
+    width:90%;
+    margin:0px auto;
+  }
+
+  .slick-slide{
+    margin:10px;
+  }
+  
+  .slick-slide img{
+    width:100%;
+    border: 2px solid #fff;
+  }
+  
+  .slick-current{
+    transform: scale(1.5);
+  }
 
