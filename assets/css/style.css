@@ -5,6 +5,7 @@
     --bluCeleste: #4dbfca;
     --melaVerde: #aedc98;
     --verdeForesta: #47873e;
+    --swiper-theme-color: #aedc98!important;
 }
 
 html, body {
@@ -35,6 +36,13 @@ html, body {
     border-color: var(--verdeForesta);
     text-transform: uppercase;
     color: var(--resina);
+}
+
+.btn-secondary {
+    background-color: var(--resina);
+    border-color: var(--resina);
+    text-transform: uppercase;
+    color: var(--verdeForesta);
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
@@ -84,6 +92,13 @@ h2 {
     font-size: 25px;
     font-family: 'Hearing', sans-serif;
     line-height: 3px;
+    letter-spacing: 0.02rem;
+}
+
+h3 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
     letter-spacing: 0.02rem;
 }
 
@@ -319,6 +334,7 @@ header .logo {
 }
 
 #alberelli {
+    z-index: 999;
     background-image: url('../immagini/skyline2.png');
     background-repeat: repeat-x;
     height: 100px;
@@ -388,7 +404,6 @@ header .logo {
 /* -------------------------------------------------------------------------- */
 
 .hero_img {
-    
     height: 70vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -399,10 +414,12 @@ header .logo {
     align-items: center;
     overflow: hidden;
 }
+
 .hero_img.hero_img--choose_to_reuse {
     background-image: url("../immagini/choose_to_reuse/hero.jpg");
 }
-.hero_img.hero_img--source{
+
+.hero_img.hero_img--source {
     background-image: url("../immagini/source/hero.png");
 }
 
@@ -414,7 +431,7 @@ header .logo {
     padding: 30px;
 }
 
-.hero_overlay.hero_overlay--choose_to_reuse{
+.hero_overlay.hero_overlay--choose_to_reuse {
     background: rgba(174, 220, 152, 0.8);
 }
 
@@ -447,9 +464,7 @@ header .logo {
     box-shadow: 4px 4px 10px rgba(5, 10, 4, 0.1);
     padding: 40px;
     /* position: absolute; */
-    /* top: 200
-px
-; */
+    /* top: 200px; */
     position: relative;
     width: 85%;
     margin: 0 auto;
@@ -646,44 +661,15 @@ px
 
 }
 
-.swiper {
-    width: 100%;
-    height: 300px;
-}
 
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
 
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
+/* -------------------------------------------------------------------------- */
+/*                                    Gallery                                 */
+/* --------------------------------------------------------------------------  */
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
- /* -------------------------------------------------------------------------- */
- /*                                    Gallery                                 */
- /* --------------------------------------------------------------------------  */
-
-.carousel-control-prev{
-    background: -webkit-linear-gradient(left,rgba(5,10,4, 0.8) 0,transparent 90%);
+.carousel-control-prev {
+    background: -webkit-linear-gradient(left, rgba(5, 10, 4, 0.8) 0, transparent 90%);
 }
 
 .carousel-control-prev {
@@ -724,3 +710,57 @@ px
     transform: scale(1.5);
   }
 
+
+.tree_price {
+    font-family: Hearing;
+}
+
+.alloggi {
+    background-image: url("../immagini/booking/BGAlloggi.jpg");
+    border-radius: 5px;
+    margin-top: 30px;
+    background-size: cover;
+    background-position: center;
+}
+
+.esperienze{
+    background-image: url("../immagini/booking/BGEsperienze.jpg");
+    border-radius: 5px;
+    margin-top: 30px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card-img-top{
+    width: 100%;
+    height: 250px;
+    object-fit: cover
+}
+
+
+.card_heart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icone_alloggi{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 55px;
+}
+.icone_alloggi img {
+    filter: invert(21%) sepia(39%) saturate(2993%) hue-rotate(173deg) brightness(97%) contrast(98%);
+}
+
+.payment p{
+    font-family: 'Hearing', sans-serif;
+    font-size: 17px;
+    margin-top: -16px;
+}
+
+.text_hidden{
+    display: none;
+}
