@@ -764,3 +764,15 @@ header .logo {
 .text_hidden{
     display: none;
 }
+
+.swiper-pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-pagination-bullet-active  {
+    width: 20px!important;
+    height: 20px!important;
+}
