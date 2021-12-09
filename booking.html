@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+  <link rel="preload" href="assets/font/HearingRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
+  <link href="http://fonts.cdnfonts.com/css/hearing" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Komorebi</title>
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img class="logo" src="./assets/logo.png"></a>
+    <img id="btn_menu_open" src="assets/icone/menu.svg">
+    <div class="menu menu--close" id="menu">
+      <div id="btn_menu_close" class="d-flex justify-content-end p-3">
+        <img class="icon-menu-mobile" src="./assets/icone/close.svg" />
+      </div>
+      <div class="mobile_menu_wrapper">
+        <ul class="mobile_menu_ul">
+          <li><a href="index.html"><span></span><span>Home</span></a></li>
+          <li class="active"><a href="explore.html"><span></span><span>Esplora l'isola</span></a></li>
+          <li class="sub_menu" style="height: auto;">
+            <ul class="mobile_menu_ul ml-2">
+              <li><a href="source.html"><span></span><span>La sorgente</span></a></li>
+              <li><a href="#"><span></span><span>Choose to reuse</span></a></li>
+            </ul>
+          </li>
+          <li><a href="#"><span></span><span>Vivere a Komorebi</span></a></li>
+          <li><a href="#"><span></span><span>Come raggiungerci</span></a></li>
+          <li><a href="#"><span></span><span>Prenota un'esperienza</span></a></li>
+          <li><a href="#"><span></span><span>Adotta un albero</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="containerKomorebi">
+    <h1 style="color: var(--verdeForesta); margin-top: 30px;">Prenota un alloggio o un'esperienza</h1>
+    <p>Komorebi vi aspetta! Sull’isola si possono svolgere attività di ogni genere: dall’avventura alla meditazione,
+      fino alla gastronomia. La scelta ottimale, per vivere appieno la tua visita a Komorebi, è pernottare. Infatti, il
+      contatto con la natura influenza il benessere mentale e migliora l’umore. I nostri alloggi, immersi nella natura,
+      vi permetteranno di svegliarvi con il cinguettio degli uccelli e di ammirare il paesaggio mentre fate colazione.
+      Il pernottamento è consigliabile ma non obblgatorio: è possibile prenotare singole esperienze da vivere in
+      giornata</p>
+
+    <div class="alloggi pointer">
+      <div class="d-flex justify-content-center align-items-center w-100" style="border-radius: 5px; height: 85px;">
+        <div style="background: rgba(241, 248, 240, 0.5); border-radius: 5px;" class="w-50 text-center">
+          <h1 style="color: var(--bluNavy);">Alloggi</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="esperienze pointer">
+      <div class="d-flex justify-content-center align-items-center w-100" style="border-radius: 5px; height: 85px;">
+        <div style="background: rgba(241, 248, 240, 0.5); border-radius: 5px;" class="w-50 text-center">
+          <h1 style="color: var(--verdeForesta);">Esperienze</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="alloggi_cards">
+      <h1 style="color: var(--verdeForesta); margin-top: 30px;">Alloggi</h1>
+      <div class="card mb-3" style="border-radius: 5px;">
+        <img src="assets/immagini/booking/alloggio1.jpg" ) class="card-img-top" alt="">
+        <div class="card-body" style="background-color: var(--melaVerde)" ;>
+          <div class="card_heart">
+            <h3 class="card-title" style="color: var(--verdeForesta)">Casa del Pino</h3>
+            <img src="assets/immagini/booking/heart.png"></div>
+          <div class="stelline">
+            <img src="assets/immagini/booking/fullstar.png">
+            <img src="assets/immagini/booking/fullstar.png">
+            <img src="assets/immagini/booking/fullstar.png">
+            <img src="assets/immagini/booking/fullstar.png">
+            <img src="assets/immagini/booking/star.png">
+          </div>
+          <p class="card-text" style="margin-top: 10px;">Soggiornare qui ti farà provare un’esperienza unica. Sospesa a
+            15 metri di altezza, la casa del pino offre tutte le comodità e...</p>
+            <p class="text_hidden">Soggiornare qui ti farà provare un’esperienza unica. Sospesa a 15 metri di altezza, la casa del pino offre tutte le comodità e una vista pazzesca sul bosco circostante. Non mancano, ovviamente, tutti i confort: dal condizionatore, alla rete internet, anche se non vi serviranno perché rimarrete affascinati dalla natura che vi circonda. </p>
+          <div class="icone_alloggi">
+            <img src="assets/icone/ac.svg">
+            <img src="assets/icone/tv.svg">
+            <img src="assets/icone/wifi.svg">
+          </div>
+          <div class="payment" style="margin-top: 30px">
+            <div></div>
+            <p>da</p>
+            <p style="font-size: 40px";>60€</p>
+            <p>a notte</p>
+          </div>
+            <a href="#" class="btn btn-secondary">ADOTTA</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <div id="alberelli"></div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+  <footer class="footer">
+      <div class="footer_content">
+          <div>
+              <img class="logo" src="./assets/logo.png">
+              <p style="font-family: hearing; font-size: 32px;">KOMOREBI</p>
+          </div>
+          <div>
+              <p class="section_title">CONTATTI</p>
+              <p>Telefono: +39-000-0000-0000</p>
+              <p>Email: komorebi@example.it</p>
+          </div>
+          <div class="separator"></div>
+          <div>
+              <p class="section_title">COME RAGGIUNGERCI</p>
+              <p>Mongolfiera</p>
+              <p>Dirigibile</p>
+              <p>Deltaplano</p>
+          </div>
+          <div class="separator"></div>
+          <div>
+              <p class="section_title">PRENOTA UN'ESPERIENZA</p>
+              <p>Dove soggiornare</p>
+              <p>Esperienze</p>
+          </div>
+      </div>
+      <div>
+          <h3>Copyright - Komorebi 2021</h3>
+      </div>
+  </footer>
+
+
+  <div class="modal fade" id="modal_detail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body" id="modal_detail_body">
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+</div>

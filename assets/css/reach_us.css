@@ -15,12 +15,12 @@
 
 .transport_carousel_wrapper .means_of_transport {
     transform-style: preserve-3d;
-    opacity: 0;
+    display: none;
     transition: transform .5s, opacity .5s, z-index .5s;
 }
 .transport_carousel_wrapper .means_of_transport.initial,
 .transport_carousel_wrapper .means_of_transport.active {
-  opacity: 1;
+  display: block;
   position: relative;
   z-index: 900;
 }
