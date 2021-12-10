@@ -1,7 +1,9 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
-    effect: 'cards',
+    // effect: 'cards',
+    spaceBetween: 30,
+    autoHeight: true,
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
