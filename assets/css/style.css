@@ -692,21 +692,15 @@ header .logo {
     background: -webkit-linear-gradient(left, rgba(5, 10, 4, 0.8) 0, transparent 90%);
 }
 
-.carousel-control-prev {
-    background: -webkit-linear-gradient(left, rgba(5, 10, 4, 0.8) 0, transparent 90%);
-}
-
 .carousel-control-next {
     background: -webkit-linear-gradient(right, rgba(5, 10, 4, 0.8) 0, transparent 90%);
 }
 
-.carousel-control-prev {
+.carousel-control-prev, .carousel-control-next {
     opacity: 1;
+    width: 18%;
 }
 
-.carousel-control-next {
-    opacity: 1;
-}
 
 /* -------------------------------------------------------------------------- */
 /*                                    icon-map                                */
