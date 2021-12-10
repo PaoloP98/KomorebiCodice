@@ -3,6 +3,7 @@ const swiper = new Swiper('.swiper', {
     loop: true,
     // effect: 'cards',
     spaceBetween: 30,
+    autoHeight: true,
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',

@@ -4,6 +4,7 @@ const swiperHouses = new Swiper('.swiper1', {
     // effect: 'cards',
     // If we need pagination
     spaceBetween: 30,
+    autoHeight: true,
     pagination: {
       el: '.swiper-pagination1',
     },
@@ -25,6 +26,7 @@ const swiperHouses = new Swiper('.swiper1', {
     // Optional parameters
     loop: true,
     spaceBetween: 30,
+    autoHeight: true,
     // effect: 'cards',
     // If we need pagination
     pagination: {
