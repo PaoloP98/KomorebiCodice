@@ -14,11 +14,17 @@ html, body {
     background-color: var(--resina);
 }
 
+
+
 /* -------------------------------------------------------------------------- */
 /*                                   Utility                                  */
 /* -------------------------------------------------------------------------- */
 .pointer {
     cursor: pointer;
+}
+
+.drop-shadow-img {
+    box-shadow: 4px 4px 10px rgba(5, 10, 4, 0.1);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -689,27 +695,8 @@ header .logo {
 }
 
 /* -------------------------------------------------------------------------- */
-/*                                    icon-map                                */
+/*                           DIRE QUESTO COS'E'                               */
 /* -------------------------------------------------------------------------- */
-
-.carousel{
-    width:90%;
-    margin:0px auto;
-  }
-
-  .slick-slide{
-    margin:10px;
-  }
-  
-  .slick-slide img{
-    width:100%;
-    border: 2px solid #fff;
-  }
-  
-  .slick-current{
-    transform: scale(1.5);
-  }
-
 
 .tree_price {
     font-family: Hearing;

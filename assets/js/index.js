@@ -147,10 +147,7 @@ $('#galleryEsploraIsola').carousel
     interval: 0
 })
 
-$(document).ready(function(){
-  $('.carousel').slick({
-  slidesToShow: 3,
-  dots:false,
-  centerMode: true,
-  });
-});
+function iconaMappa(x) {
+  $(".iconOver").css("visibility", "hidden");
+  $("." + x).css("visibility", "visible");
+}

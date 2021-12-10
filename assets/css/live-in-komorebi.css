@@ -1,0 +1,131 @@
+/* -------------------------------------------------------------------------- */
+/*                                    pin-over-map                            */
+/* -------------------------------------------------------------------------- */
+
+.map {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.container { 
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+ }
+
+.container .map { 
+    display: block; 
+}
+
+.container #pin-over-map-bar { 
+    width: 14%;
+    position: absolute;
+    bottom: 45%;
+    left: 23%; 
+}
+
+.container #pin-over-map-bar-2 { 
+    width: 14%;
+    position: absolute;
+    bottom: 17%;
+    left: 27%; 
+}
+
+.container #pin-over-map-sorgenti {
+    width: 14%;
+    position: absolute;
+    bottom: 58%;
+    left: 15%;
+}
+
+.container #pin-over-map-sorgenti-2 {
+    width: 14%;
+    position: absolute;
+    bottom: 65%;
+    left: 45%;
+}
+
+.container #pin-over-map-sorgenti-3 {
+    width: 14%;
+    position: absolute;
+    bottom: 36%;
+    left: 33%;
+}
+
+.container #pin-over-map-restaurant {
+    width: 14%;
+    position: absolute;
+    bottom: 60%;
+    left: 27%;
+}
+
+.container #pin-over-map-restaurant-2 {
+    width: 14%;
+    position: absolute;
+    bottom: 39%;
+    left: 67%;
+}
+
+.container #pin-over-map-infopoint {
+    width: 14%;
+    position: absolute;
+    bottom: 17%;
+    left: 57%;
+}
+
+.container #pin-over-map-station {
+    width: 14%;
+    position: absolute;
+    bottom: 63%;
+    left: 78%;
+}
+
+.container #pin-over-map-transport {
+    width: 14%;
+    position: absolute;
+    bottom: 70%;
+    left: 23%;
+}
+
+.container #pin-over-map-transport-2 {
+    width: 14%;
+    position: absolute;
+    bottom: 36%;
+    left: 83%;
+}
+
+.icon-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.iconOver {
+    visibility: hidden;
+}
+
+.all-icon {
+    display: flex; 
+    flex-direction: row; 
+    overflow-x: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--melaVerde);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--verdeForesta);
+  }
+  
