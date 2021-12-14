@@ -150,11 +150,12 @@ $('#galleryEsploraIsola').carousel
 
 function iconaMappa(x) {
   $(".iconOver").css("visibility", "hidden");
-  $("." + x).css("visibility", "visible");
+  
   $(".icon-map img").removeClass("active");
   $(".icon-map p").removeClass("active");
   if (selectedIconLiveKomorebi != x) {
     selectedIconLiveKomorebi = x;
+    $("." + x).css("visibility", "visible");
     $(".icon-map-" + x).addClass("active");
     $(".text-icon-map-" + x).addClass("active");
   }
