@@ -6,15 +6,11 @@ items = document.getElementsByClassName(itemClassName),
     slide = 0,
     moving = false;
 
-console.log(items);
-
-
 // Next navigation handler
 function moveNext() {
     // Check if moving
     if (!moving) {
         // If it's the last slide, reset to 0, else +1
-        console.log(slide)
         if (slide === (totalItems - 1)) {
             slide = 0;
         } else {
@@ -47,7 +43,6 @@ function setInitialClasses() {
     items[1].classList.add("next");
 }
 function moveCarouselTo(slide) {
-    console.log("🚀 ~ file: reach_us.js ~ line 50 ~ moveCarouselTo ~ slide", slide)
     // Check if carousel is moving, if not, allow interaction
     if (!moving) {
         // temporarily disable interactivity
@@ -79,8 +74,6 @@ function moveCarouselTo(slide) {
         // by adding/removing classes we'll trigger the transitions.
         // Reset old next/prev elements to default classes
         items[oldPrevious].className = itemClassName;
-        console.log("🚀 ~ file: reach_us.js ~ line 81 ~ moveCarouselTo ~ oldPrevious", oldPrevious)
-        console.log("🚀 ~ file: reach_us.js ~ line 83 ~ moveCarouselTo ~ oldNext", oldNext)
         if (oldNext < totalItems)
             items[oldNext].className = itemClassName;
 
