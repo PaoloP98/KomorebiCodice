@@ -159,6 +159,10 @@ function iconaMappa(x) {
     $(".icon-map-" + x).addClass("active");
     $(".text-icon-map-" + x).addClass("active");
   }
+  else {
+    selectedIconLiveKomorebi = "";
+  }
+  
 
 
 
