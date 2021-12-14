@@ -7,28 +7,28 @@
     border-radius: 5px;
 }
 
-.container { 
+.container {
     margin: 0 auto;
     position: relative;
     padding: 0;
- }
-
-.container .map { 
-    display: block; 
 }
 
-.container #pin-over-map-bar { 
+.container .map {
+    display: block;
+}
+
+.container #pin-over-map-bar {
     width: 14%;
     position: absolute;
     bottom: 45%;
-    left: 23%; 
+    left: 23%;
 }
 
-.container #pin-over-map-bar-2 { 
+.container #pin-over-map-bar-2 {
     width: 14%;
     position: absolute;
     bottom: 17%;
-    left: 27%; 
+    left: 27%;
 }
 
 .container #pin-over-map-sorgenti {
@@ -103,13 +103,29 @@
     padding-right: 20px;
 }
 
+.icon-map img {
+    filter: invert(46%) sepia(10%) saturate(2489%) hue-rotate(66deg) brightness(94%) contrast(84%);
+}
+.icon-map p {
+    color: var(--verdeForesta);
+}
+.icon-map img.active {
+    zoom: 1.5;
+    filter: invert(98%) sepia(7%) saturate(2078%) hue-rotate(38deg) brightness(97%) contrast(77%);
+}
+.icon-map p.active {
+    color: var(--melaVerde);
+}
+
+
+
 .iconOver {
     visibility: hidden;
 }
 
 .all-icon {
-    display: flex; 
-    flex-direction: row; 
+    display: flex;
+    flex-direction: row;
     overflow-x: auto;
 }
 
@@ -117,16 +133,14 @@
 ::-webkit-scrollbar {
     width: 3px;
     height: 3px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     background: var(--melaVerde);
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: var(--verdeForesta);
-  }
-  
-  
+}
