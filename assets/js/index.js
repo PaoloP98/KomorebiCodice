@@ -150,4 +150,7 @@ $('#galleryEsploraIsola').carousel
 function iconaMappa(x) {
   $(".iconOver").css("visibility", "hidden");
   $("." + x).css("visibility", "visible");
+  $(".icon-map").css("filter", "none");
+  $(".icon-map-" + x).css("filter", "invert(98%) sepia(7%) saturate(2078%) hue-rotate(38deg) brightness(97%) contrast(77%)");
+
 }
