@@ -1,6 +1,7 @@
 let btnMenuClose = document.getElementById("btn_menu_close");
 let btnMenuOpen = document.getElementById("btn_menu_open");
 let overlay = document.getElementById("overlay");
+let selectedIconLiveKomorebi = "";
 
 
 function closeMenu() {
@@ -13,8 +14,8 @@ function closeMenu() {
 }
 function isHidden(selector) {
   return ($(selector).css('display') == 'none' || $(selector).css("visibility") == "hidden");
-    
-  
+
+
 }
 $(".card_1_wrapper").click(function () {
   if (!isHidden('.card_1_txt')) {
@@ -129,7 +130,7 @@ overlay.addEventListener("click", () => {
 $(document).scroll(function () {
   if ($('#alberelli').offset().top + $('#alberelli').height()
     >= $('footer').offset().top) {
-    $('#alberelli').css({"position": "absolute", "bottom": "-1px"});
+    $('#alberelli').css({ "position": "absolute", "bottom": "-1px" });
   }
   if ($(document).scrollTop() + window.innerHeight < $('footer').offset().top) {
     $('#alberelli').css('position', 'fixed'); // restore when you scroll up
@@ -143,16 +144,21 @@ $(document).scroll(function () {
 //   },
 // });
 $('#galleryEsploraIsola').carousel
-({
+  ({
     interval: 0
-})
+  })
 
 function iconaMappa(x) {
   $(".iconOver").css("visibility", "hidden");
   $("." + x).css("visibility", "visible");
   $(".icon-map img").removeClass("active");
   $(".icon-map p").removeClass("active");
-  $(".icon-map-" + x).addClass("active");
-  $(".text-icon-map-" + x).addClass("active");
+  if (selectedIconLiveKomorebi != x) {
+    selectedIconLiveKomorebi = x;
+    $(".icon-map-" + x).addClass("active");
+    $(".text-icon-map-" + x).addClass("active");
+  }
+
+
 
 }
