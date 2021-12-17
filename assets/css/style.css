@@ -18,7 +18,9 @@ html, body {
     background-color: var(--resina);
 }
 
-
+.only_desktop {
+    display: none;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                   Utility                                  */
@@ -547,6 +549,13 @@ header .logo {
 }
 
 @media (min-width:992px) {
+    .only_desktop {
+        display: block;
+    }
+    
+    .only_mobile {
+        display: none!important;
+    }
 
     #li_servizi, .panel, #btn_menu_open, #btn_menu_close {
         display: none !important;
@@ -646,7 +655,7 @@ header .logo {
     /* -------------------------------------------------------------------------- */
     /*                               Footer Desktop                               */
     /* -------------------------------------------------------------------------- */
-    footer{
+    footer {
         max-width: 100vw;
     }
 

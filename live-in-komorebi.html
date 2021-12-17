@@ -16,7 +16,7 @@
 
     <link href="assets/font/Hearing.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
-    
+
 
 
     <title>Komorebi</title>
@@ -52,74 +52,161 @@
 
 
     <div class="containerKomorebi">
-        <h1 style="margin-top: 20px; color: var(--verdeForesta);">Vivere a Komorebi</h1>
-        <p style="margin-top: 10px;">
-            Vivere a Komorebi è un’esperienza unica, sia per il forte contatto con la natura, sia per i vari servizi
-            presenti in tutta l’isola. Infatti, sono diverse le stazioni, i bar e i ristoranti che permettono di godere
-            a pieno dell’isola, senza però rinunciare alle comodità e agli intrattenimenti di una qualsiasi città
-            turistica.
-        </p>
+        <div class="map_section">
 
-        <div class="container">
-            <img class="map drop-shadow-img" src="./assets/immagini/live-in-komorebi/img-map.png" alt="img-map"
-                style="margin-top: 20px;">
-            <img class="iconOver bar" id="pin-over-map-bar" src="./assets/immagini/live-in-komorebi/pin-map-bar.svg"
-                alt="pin-map-bar">
-            <img class="iconOver bar" id="pin-over-map-bar-2" src="./assets/immagini/live-in-komorebi/pin-map-bar.svg"
-                alt="pin-map-bar2">
-            <img class="iconOver sorgenti" id="pin-over-map-sorgenti"
-                src="./assets/immagini/live-in-komorebi/pin-map-sorgenti.svg" alt="pin-map-sorgente">
-            <img class="iconOver sorgenti" id="pin-over-map-sorgenti-2"
-                src="./assets/immagini/live-in-komorebi/pin-map-sorgenti.svg" alt="pin-map-sorgente2">
-            <img class="iconOver sorgenti" id="pin-over-map-sorgenti-3"
-                src="./assets/immagini/live-in-komorebi/pin-map-sorgenti.svg" alt="pin-map-sorgenti3">
-            <img class="iconOver ristoranti" id="pin-over-map-restaurant"
-                src="./assets/immagini/live-in-komorebi/pin-map-restaurant.svg" alt="pin-map-restaurant">
-            <img class="iconOver ristoranti" id="pin-over-map-restaurant-2"
-                src="./assets/immagini/live-in-komorebi/pin-map-restaurant.svg" alt="pin-map-restaurant2">
-            <img class="iconOver infopoint" id="pin-over-map-infopoint"
-                src="./assets/immagini/live-in-komorebi/pin-map-infopoint.svg" alt="pin-map-infopoint">
-            <img class="iconOver stazioni" id="pin-over-map-station"
-                src="./assets/immagini/live-in-komorebi/pin-map-station.svg" alt="pin-map-station">
-            <img class="iconOver trasporti" id="pin-over-map-transport"
-                src="./assets/immagini/live-in-komorebi/pin-map-transport.svg" alt="pin-map-transport">
-            <img class="iconOver trasporti" id="pin-over-map-transport-2"
-                src="./assets/immagini/live-in-komorebi/pin-map-transport.svg" alt="pin-map-transport2">
-        </div>
-        <div class="all-icon">
-            <div class="icon-map pointer" onclick="iconaMappa('stazioni')">
-                <img class="icon-map-stazioni" src="./assets/immagini/live-in-komorebi/icon-station.svg" alt="icon-station">
-                <p class="text-icon-map text-icon-map-stazioni">Stazioni</p>
+            <div class="map_section__intro_text">
+
+                <h1 style="margin-top: 20px; color: var(--verdeForesta);">Vivere a Komorebi</h1>
+                <p style="margin-top: 10px;">
+                    Vivere a Komorebi è un’esperienza <strong>unica</strong>, sia per il forte contatto con la natura,
+                    sia per i vari
+                    servizi
+                    presenti in tutta l’isola. Infatti, sono diverse le stazioni, i bar e i ristoranti che permettono di
+                    godere
+                    a pieno dell’isola, senza però rinunciare alle <strong>comodità</strong> e agli
+                    <strong>intrattenimenti</strong> di una qualsiasi
+                    città
+                    turistica.
+                </p>
+
+                <div class="map-icon-wrapper only_desktop">
+                    <div class="icon-map">
+                        <div class="pointer" onclick="iconaMappa('ristoranti')">
+                            <img class="icon-map-ristoranti"
+                                src="./assets/immagini/live-in-komorebi/icon-restaurant.svg" alt="icon-restaurant">
+                            <p class="text-icon-map text-icon-map-ristoranti">Ristoranti</p>
+                            <p class="text-icon-map-description">
+                                I ristoranti presenti sull’isola cucinano con prodotti
+                                biologici e a km 0.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="icon-map">
+                        <div class="pointer" onclick="iconaMappa('trasporti')">
+                            <img class="icon-map-trasporti" src="./assets/immagini/live-in-komorebi/icon-transport.svg"
+                                alt="icon-transport">
+                            <p class="text-icon-map text-icon-map-trasporti">Trasporti</p>
+                            <p class="text-icon-map-description">
+                                I veicoli addibiti a trasporto pubblico sono totalmente
+                                eco-friendly.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="icon-map">
+                        <div class="pointer" onclick="iconaMappa('stazioni')">
+                            <img class="icon-map-stazioni" src="./assets/immagini/live-in-komorebi/icon-station.svg"
+                                alt="icon-station">
+                            <p class="text-icon-map text-icon-map-stazioni">Stazioni</p>
+                            <p class="text-icon-map-description">
+                                Le stazioni presenti permettono a chiunque di raggiungere
+                                l’isola con i vari mezzi.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="icon-map">
+                        <div class="pointer" onclick="iconaMappa('infopoint')">
+                            <img class="icon-map-infopoint" src="./assets/immagini/live-in-komorebi/icon-infopoint.svg"
+                                alt="icon-infopoint">
+                            <p class="text-icon-map text-icon-map-infopoint">Infopoint</p>
+                            <p class="text-icon-map-description">In questi Box potrai informarti sui vari servizi e
+                                attività
+                                che puoi trovare a Komorebi.</p>
+                        </div>
+                    </div>
+                    <div class="icon-map">
+                        <div class="pointer" onclick="iconaMappa('bar')">
+                            <img class="icon-map-bar" src="./assets/immagini/live-in-komorebi/icon-bar.svg"
+                                alt="icon-bar">
+                            <p class="text-icon-map text-icon-map-bar">Bar</p>
+                            <p class="text-icon-map-description">Nei vari bar sparsi sull’isola ci si può rilassare dopo
+                                un’escursione o una gita in mtb.</p>
+
+                        </div>
+                    </div>
+                    <div class="icon-map">
+                        <div class="pointer" onclick="iconaMappa('sorgenti')">
+                            <img class="icon-map-sorgenti" src="./assets/immagini/live-in-komorebi/icon-sorgenti.svg"
+                                alt="icon-sorgenti">
+                            <p class="text-icon-map text-icon-map-sorgenti">Sorgenti</p>
+                            <p class="text-icon-map-description">L’acqua delle sorgenti è potabile grazie alla
+                                filtrazione
+                                naturale delle rocce.</p>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
-            <div class="icon-map pointer" onclick="iconaMappa('infopoint')">
-                <img class="icon-map-infopoint" src="./assets/immagini/live-in-komorebi/icon-infopoint.svg" alt="icon-infopoint">
-                <p class="text-icon-map text-icon-map-infopoint">Infopoint</p>
+
+            <div class="container">
+                <img class="map drop-shadow-img" src="./assets/immagini/live-in-komorebi/img-map.png" alt="img-map"
+                    style="margin-top: 20px;">
+                <img class="iconOver bar" id="pin-over-map-bar" src="./assets/immagini/live-in-komorebi/pin-map-bar.svg"
+                    alt="pin-map-bar">
+                <img class="iconOver bar" id="pin-over-map-bar-2"
+                    src="./assets/immagini/live-in-komorebi/pin-map-bar.svg" alt="pin-map-bar2">
+                <img class="iconOver sorgenti" id="pin-over-map-sorgenti"
+                    src="./assets/immagini/live-in-komorebi/pin-map-sorgenti.svg" alt="pin-map-sorgente">
+                <img class="iconOver sorgenti" id="pin-over-map-sorgenti-2"
+                    src="./assets/immagini/live-in-komorebi/pin-map-sorgenti.svg" alt="pin-map-sorgente2">
+                <img class="iconOver sorgenti" id="pin-over-map-sorgenti-3"
+                    src="./assets/immagini/live-in-komorebi/pin-map-sorgenti.svg" alt="pin-map-sorgenti3">
+                <img class="iconOver ristoranti" id="pin-over-map-restaurant"
+                    src="./assets/immagini/live-in-komorebi/pin-map-restaurant.svg" alt="pin-map-restaurant">
+                <img class="iconOver ristoranti" id="pin-over-map-restaurant-2"
+                    src="./assets/immagini/live-in-komorebi/pin-map-restaurant.svg" alt="pin-map-restaurant2">
+                <img class="iconOver infopoint" id="pin-over-map-infopoint"
+                    src="./assets/immagini/live-in-komorebi/pin-map-infopoint.svg" alt="pin-map-infopoint">
+                <img class="iconOver stazioni" id="pin-over-map-station"
+                    src="./assets/immagini/live-in-komorebi/pin-map-station.svg" alt="pin-map-station">
+                <img class="iconOver trasporti" id="pin-over-map-transport"
+                    src="./assets/immagini/live-in-komorebi/pin-map-transport.svg" alt="pin-map-transport">
+                <img class="iconOver trasporti" id="pin-over-map-transport-2"
+                    src="./assets/immagini/live-in-komorebi/pin-map-transport.svg" alt="pin-map-transport2">
             </div>
-            <div class="icon-map pointer" onclick="iconaMappa('trasporti')">
-                <img class="icon-map-trasporti" src="./assets/immagini/live-in-komorebi/icon-transport.svg" alt="icon-transport">
-                <p class="text-icon-map text-icon-map-trasporti">Trasporti</p>
-            </div>
-            <div class="icon-map pointer" onclick="iconaMappa('sorgenti')">
-                <img class="icon-map-sorgenti" src="./assets/immagini/live-in-komorebi/icon-sorgenti.svg" alt="icon-sorgenti">
-                <p class="text-icon-map text-icon-map-sorgenti">Sorgenti</p>
-            </div>
-            <div class="icon-map pointer" onclick="iconaMappa('ristoranti')">
-                <img class="icon-map-ristoranti" src="./assets/immagini/live-in-komorebi/icon-restaurant.svg" alt="icon-restaurant">
-                <p class="text-icon-map text-icon-map-ristoranti">Ristoranti</p>
-            </div>
-            <div class="icon-map pointer" onclick="iconaMappa('bar')">
-                <img class="icon-map-bar" src="./assets/immagini/live-in-komorebi/icon-bar.svg" alt="icon-bar">
-                <p class="text-icon-map text-icon-map-bar">Bar</p>
+            <div class="map-icon-wrapper only_mobile">
+                <div class="icon-map pointer" onclick="iconaMappa('stazioni')">
+                    <img class="icon-map-stazioni" src="./assets/immagini/live-in-komorebi/icon-station.svg"
+                        alt="icon-station">
+                    <p class="text-icon-map text-icon-map-stazioni">Stazioni</p>
+                </div>
+                <div class="icon-map pointer" onclick="iconaMappa('infopoint')">
+                    <img class="icon-map-infopoint" src="./assets/immagini/live-in-komorebi/icon-infopoint.svg"
+                        alt="icon-infopoint">
+                    <p class="text-icon-map text-icon-map-infopoint">Infopoint</p>
+                </div>
+                <div class="icon-map pointer" onclick="iconaMappa('trasporti')">
+                    <img class="icon-map-trasporti" src="./assets/immagini/live-in-komorebi/icon-transport.svg"
+                        alt="icon-transport">
+                    <p class="text-icon-map text-icon-map-trasporti">Trasporti</p>
+                </div>
+                <div class="icon-map pointer" onclick="iconaMappa('sorgenti')">
+                    <img class="icon-map-sorgenti" src="./assets/immagini/live-in-komorebi/icon-sorgenti.svg"
+                        alt="icon-sorgenti">
+                    <p class="text-icon-map text-icon-map-sorgenti">Sorgenti</p>
+                </div>
+                <div class="icon-map pointer" onclick="iconaMappa('ristoranti')">
+                    <img class="icon-map-ristoranti" src="./assets/immagini/live-in-komorebi/icon-restaurant.svg"
+                        alt="icon-restaurant">
+                    <p class="text-icon-map text-icon-map-ristoranti">Ristoranti</p>
+                </div>
+                <div class="icon-map pointer" onclick="iconaMappa('bar')">
+                    <img class="icon-map-bar" src="./assets/immagini/live-in-komorebi/icon-bar.svg" alt="icon-bar">
+                    <p class="text-icon-map text-icon-map-bar">Bar</p>
+                </div>
             </div>
         </div>
 
 
         <h2 style="margin-top: 30px; margin-bottom: 20px; color:var(--verdeForesta);">La sorgente</h2>
-        <img src="./assets/immagini/live-in-komorebi/img-sorgente.png" class="d-block w-100 drop-shadow-img" alt="img-sorgente">
-        <p style="margin-top: 20px;">Al centro dell’isola è presente la sorgente principale da cui la comunità di
+        <img src="./assets/immagini/live-in-komorebi/img-sorgente.png" class="d-block w-100 drop-shadow-img"
+            alt="img-sorgente">
+        <p style="margin-top: 20px;">Al centro dell’isola è presente la <strong>sorgente principale</strong> da cui la
+            comunità di
             Komorebi ricava energia
-            idroelettrica. Oltre alla sorgente principale, sono presenti altre due sorgenti: la sorgente Verde e la
-            sorgente Nascosta.
+            idroelettrica. Oltre alla sorgente principale, sono presenti altre due sorgenti: la sorgente
+            <strong>Verde</strong> e la
+            sorgente <strong>Nascosta</strong>.
             Sono fonti di acqua potabile ed ognuna presenta caratteristiche diverse che le rendono uniche al mondo.
         </p>
         <a href="source.html" class="btn btn-primary mt-4">Scopri di più</a>
@@ -127,9 +214,12 @@
         <h2 style="margin-top: 30px; margin-bottom: 20px; color:var(--verdeForesta);">Choose to reuse</h2>
         <img src="./assets/immagini/live-in-komorebi/img-choose-to-reuse.png" class="d-block w-100 drop-shadow-img"
             alt="img-choose-to.reuse">
-        <p style="margin-top: 20px;">Gli abitanti di Komorebi hanno molto a cuore la tematica ambientale. Choose to
-            reuse è un servizio dell’isola che dà nuova vita e valore ai rifiuti tramite un riuso creativo noto come
-            “upcycling”. I rifiuti vengono raccolti e selezionati dagli abitanti, per poi essere trasformati in nuovi
+        <p style="margin-top: 20px;">Gli abitanti di Komorebi hanno molto a cuore la tematica ambientale. <strong>Choose
+                to
+                reuse</strong> è un servizio dell’isola che dà nuova vita e valore ai rifiuti tramite un riuso creativo
+            noto come
+            <strong>“upcycling”</strong>. I rifiuti vengono raccolti e selezionati dagli abitanti, per poi essere
+            trasformati in nuovi
             prodotti riutilizzabili. I punti di raccolta sono collocati in vari punti strategici dell’isola e ognuno
             svolge attività di riuso diverso.
         </p>

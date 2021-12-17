@@ -26,7 +26,7 @@ $(".card_1_wrapper").click(function () {
   if (name == "felce") {
     $("#modal_detail_body").html(
       `
-      <p>La <b>Felce Verde</b> è una pianta molto antica, che produce particolari foglie, dette
+      <p>La <strong>Felce Verde</strong> è una pianta molto antica, che produce particolari foglie, dette
       fronde,
       lunghi piccioli portano un'unica foglia allungata, a margine frastagliato.
       Sull’isola coesistono numerosissime specie di questa pianta che possono trovare
@@ -42,7 +42,7 @@ $(".card_1_wrapper").click(function () {
     $("#modal_detail_body").html(
       `
       <p>
-      Il <b> Baobab</b> è un albero con grandi tronchi il cui diametro può raggiungere i 7 m.
+      Il <strong> Baobab</strong> è un albero con grandi tronchi il cui diametro può raggiungere i 7 m.
       È famoso per la sua capacità d'immagazzinamento d'acqua all'interno del tronco
       rigonfio, che riesce a contenere fino a 120.000 litri d'acqua per resistere alle dure
       condizioni di siccità. Con gli anni, gli abitanti dell’isola hanno imparato a costruirci
@@ -56,7 +56,7 @@ $(".card_1_wrapper").click(function () {
     $("#modal_detail_body").html(
       `
     <p>
-    Il <b>fiore di Sambuco</b> è una delle particolarità dell’isola. A Komorebi esiste una
+    Il <strong>fiore di Sambuco</strong> è una delle particolarità dell’isola. A Komorebi esiste una
     vera e
     propria coltivazione di questi fiori, ampiamente utilizzati per le loro numerose
     proprietà. Vengono infatti essicati e usati come infuso curativo, trasformati in lozioni
@@ -70,7 +70,7 @@ $(".card_1_wrapper").click(function () {
     $("#modal_detail_body").html(
       `
     <p>
-    Il <b>tucano</b> è un uccello originario del Sud America. Il suo nome scientifico è
+    Il <strong>tucano</strong> è un uccello originario del Sud America. Il suo nome scientifico è
     Ramphastos
     toco anche detto tucano toco, ma viene semplicemente chiamato tucano. Questa specie è la
     più grande della sua famiglia con il becco che può raggiungere i 20cm di lunghezza. E’
@@ -84,7 +84,7 @@ $(".card_1_wrapper").click(function () {
     $("#modal_detail_body").html(
       `
     <p>
-    La <b>lepre selvatica</b>, detta anche lepre comune, è una specie delle leproidi
+    La <strong>lepre selvatica</strong>, detta anche lepre comune, è una specie delle leproidi
     originaria
     dell’Europa e dell’Asia. Questa specie ha una forma molto sinuosa e la sua lunghezza
     varia dai 50 ai 65cm. Le zampe posteriori sono molto sviluppate così come l’udito.
@@ -98,7 +98,7 @@ $(".card_1_wrapper").click(function () {
     $("#modal_detail_body").html(
       `
     <p>
-    La <b>scimmia ragno</b> chiamata Ateles paniscus è la scimmia più agile del mondo. I
+    La <strong>scimmia ragno</strong> chiamata Ateles paniscus è la scimmia più agile del mondo. I
     suoi
     lunghi arti l’aiutano a spostarsi da albero ad albero. Si nutre quasi esclusivamente di
     frutta, ma, nel caso non sia disponibile, può mangiare anche foglie. Ha una dieta molto
