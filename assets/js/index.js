@@ -1,15 +1,15 @@
-let btnMenuClose = document.getElementById("btn_menu_close");
-let btnMenuOpen = document.getElementById("btn_menu_open");
-let overlay = document.getElementById("overlay");
+let btnMenuClose = $("#btn_menu_close");
+let btnMenuOpen = $("#btn_menu_open");
+let overlay = $("#overlay");
 let selectedIconLiveKomorebi = "";
 
 
 function closeMenu() {
-  let menu = document.getElementById("menu");
-  let overlay = document.getElementById("overlay");
-  menu.classList.add("menu--close");
-  menu.classList.remove("menu--open");
-  overlay.classList.remove("active");
+  let menu = $("#menu");
+  let overlay = $("#overlay");
+  menu.addClass("menu--close");
+  menu.removeClass("menu--open");
+  overlay.removeClass("active");
   $('body').css('overflow', 'auto');
 }
 function isHidden(selector) {
@@ -112,22 +112,22 @@ $(".card_1_wrapper").click(function () {
 });
 
 
-btnMenuClose.addEventListener("click", () => {
+btnMenuClose.click(() => {
   closeMenu();
 });
-btnMenuOpen.addEventListener("click", () => {
-  let menu = document.getElementById("menu");
-  let overlay = document.getElementById("overlay");
-  menu.classList.add("menu--open");
-  menu.classList.remove("menu--close");
-  overlay.classList.add("active");
+btnMenuOpen.click(() => {
+  let menu = $("#menu");
+  let overlay = $("#overlay");
+  menu.addClass("menu--open");
+  menu.removeClass("menu--close");
+  overlay.addClass("active");
   $('body').css('overflow', 'hidden');
 });
-overlay.addEventListener("click", () => {
+overlay.click(() => {
   closeMenu();
 });
 
-$(document).scroll(function () {
+$(document).scroll(() => {
   if ($('#alberelli').offset().top + $('#alberelli').height()
     >= $('footer').offset().top) {
     $('#alberelli').css({ "position": "absolute", "bottom": "-1px" });
@@ -150,7 +150,7 @@ $('#galleryEsploraIsola').carousel
 
 function iconaMappa(x) {
   $(".iconOver").css("visibility", "hidden");
-  
+
   $(".icon-map img").removeClass("active");
   $(".icon-map p").removeClass("active");
   if (selectedIconLiveKomorebi != x) {
@@ -162,7 +162,7 @@ function iconaMappa(x) {
   else {
     selectedIconLiveKomorebi = "";
   }
-  
+
 
 
 
