@@ -18,9 +18,6 @@ html, body {
     background-color: var(--resina);
 }
 
-.only_desktop {
-    display: none;
-}
 
 /* -------------------------------------------------------------------------- */
 /*                                   Utility                                  */
@@ -31,6 +28,10 @@ html, body {
 
 .drop-shadow-img {
     box-shadow: 4px 4px 10px rgba(5, 10, 4, 0.1);
+}
+
+.komorebi-mt {
+    margin-top: 30px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -548,14 +549,10 @@ header .logo {
     height: fit-content;
 }
 
-@media (min-width:992px) {
-    .only_desktop {
-        display: block;
-    }
-    
-    .only_mobile {
-        display: none!important;
-    }
+@media (min-width: 576px) {
+}
+
+@media (min-width:992px) {    
 
     #li_servizi, .panel, #btn_menu_open, #btn_menu_close {
         display: none !important;
