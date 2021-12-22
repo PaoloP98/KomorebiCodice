@@ -34,6 +34,15 @@ html, body {
     margin-top: 30px;
 }
 
+.h-100vh {
+    min-height: 100vh;
+}
+
+.pb-tree {
+    padding: 0 0 200px 0;
+}
+
+
 /* -------------------------------------------------------------------------- */
 /*                              Ridefinizioni BS                              */
 /* -------------------------------------------------------------------------- */
@@ -173,10 +182,14 @@ p {
 
 .containerKomorebi {
     width: calc(100vw - 40px);
-    min-height: 100vh;
     margin: 0 auto;
     position: relative;
-    padding: 0 0 200px 0;
+}
+
+.containerKomorebi-md {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
 }
 
 .text-icon-map {
@@ -432,6 +445,18 @@ header .logo {
 /*                                    Card                                    */
 /* -------------------------------------------------------------------------- */
 
+/* -------------------------------------------------------------------------- */
+/*                                    HERO                                    */
+/* -------------------------------------------------------------------------- */
+.hero_explore {
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    display: flex;
+}
+
 .hero_img {
     height: 70vh;
     background-size: cover;
@@ -452,11 +477,10 @@ header .logo {
     background-image: url("../immagini/source/hero.png");
 }
 
-.hero_overlay {
+.hero_explore .hero_overlay, .hero_img .hero_overlay {
     background: rgba(77, 191, 202, 0.8);
     box-shadow: 4px 4px 10px rgba(5, 10, 4, 0.1);
     border-radius: 5px;
-    width: 90%;
     padding: 30px;
 }
 
@@ -549,10 +573,38 @@ header .logo {
     height: fit-content;
 }
 
-@media (min-width: 576px) {
-}
+@media (min-width: 576px) {}
 
-@media (min-width:992px) {    
+@media (min-width:992px) {
+    .hero_img .hero_overlay {
+        background: rgba(77, 191, 202, 0.8);
+        box-shadow: 4px 4px 10px rgba(5, 10, 4, 0.1);
+        border-radius: 5px;
+        flex: 0 0 33.333333%;
+        padding: 30px;
+    }
+
+    .hero_img_desktop_wrapper .hero_img {
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+        height: 110vh;
+        border-radius: 5px;
+    }
+
+    .hero_img_desktop_wrapper {
+        width: calc(100vw - 160px);
+        max-width: 1920px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+    }
+
+    .hero_img_desktop_wrapper .hero_overlay {
+        position: absolute;
+        right: 0;
+        width: 70%;
+        padding: 50px;
+    }
 
     #li_servizi, .panel, #btn_menu_open, #btn_menu_close {
         display: none !important;
@@ -630,11 +682,11 @@ header .logo {
     .containerKomorebi {
         width: calc(100vw - 160px);
         max-width: 1920px;
-        min-height: 100vh;
+        /* min-height: 100vh; */
         margin: 0 auto;
         position: relative;
-
     }
+
 
     #alberelli {
         background-image: url('../immagini/skyline.png');
