@@ -1,7 +1,8 @@
-.means_of_transport .immagini {
+.means_of_transport .image_wrapper {
     background-image: url("../immagini/reach_us/Sky.png");
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     height: 300px;
 }
 
@@ -27,4 +28,10 @@
     height: auto;
     position: relative;
     z-index: 900;
+}
+@media (min-width: 992px) {
+    .transport_carousel_wrapper .means_of_transport {
+        opacity: 1;
+        height: auto;
+    }
 }

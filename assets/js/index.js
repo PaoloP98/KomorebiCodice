@@ -143,7 +143,7 @@ $(document).scroll(() => {
 //     dynamicBullets: true,
 //   },
 // });
-$('#galleryEsploraIsola').carousel
+$('#gallery-explore').carousel
   ({
     interval: 0
   })

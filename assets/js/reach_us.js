@@ -1,6 +1,6 @@
 let reach_us_back_btn = document.getElementById("reach_us_back_btn");
 let reach_us_forward_btn = document.getElementById("reach_us_forward_btn");
-let itemClassName = "means_of_transport";
+let itemClassName = "means_of_transport col-lg-4";
 items = document.getElementsByClassName(itemClassName),
     totalItems = items.length,
     slide = 0,

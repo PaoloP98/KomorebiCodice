@@ -119,17 +119,17 @@ html, body {
 /*                                    FONT                                    */
 /* -------------------------------------------------------------------------- */
 h1 {
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Hearing', sans-serif;
     letter-spacing: 0.03rem;
     margin: 0;
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 18px;
     font-family: 'Hearing', sans-serif;
     line-height: 3px;
-    letter-spacing: 0.02rem;
+    letter-spacing: 0.03rem;
 }
 
 h3 {
@@ -726,6 +726,8 @@ header .logo {
     /* -------------------------------------------------------------------------- */
     /*                                    Card                                    */
     /* -------------------------------------------------------------------------- */
+ 
+
     .card_1_wrapper {
         cursor: initial;
     }
