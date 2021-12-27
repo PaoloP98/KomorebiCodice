@@ -6,7 +6,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" content="#aedc98">
-  
+
   <link rel="icon" type="image/png" href="assets/logo.png" />
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -15,10 +15,11 @@
 
   <link href="assets/font/Hearing.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
-  
+
 
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/booking.css">
   <title>Komorebi</title>
 </head>
 
@@ -51,204 +52,285 @@
 
 
   <div class="containerKomorebi pb-tree min-vh-100">
-    <h1 style="color: var(--verdeForesta); margin-top: 30px;">Prenota un alloggio o un'esperienza</h1>
-    <p><strong>Komorebi vi aspetta!</strong> Sull'isola si possono svolgere attività di ogni genere: dall'avventura alla meditazione,
-      fino alla gastronomia. La scelta ottimale, per vivere appieno la tua visita a Komorebi, è pernottare. Infatti, il
-      contatto con la natura influenza il benessere mentale e migliora l'umore. I nostri alloggi, <strong>immersi nella natura</strong>,
-      vi permetteranno di svegliarvi con il cinguettio degli uccelli e di ammirare il paesaggio mentre fate colazione.
-      Il pernottamento è consigliabile ma <strong>non obblgatorio</strong>: è possibile prenotare singole esperienze da vivere in
-      giornata</p>
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h1 style="color: var(--verdeForesta); margin-top: 30px;">Prenota un alloggio o un'esperienza</h1>
+        <p><strong>Komorebi vi aspetta!</strong> Sull'isola si possono svolgere attività di ogni genere: dall'avventura
+          alla
+          meditazione,
+          fino alla gastronomia. La scelta ottimale, per vivere appieno la tua visita a Komorebi, è pernottare. Infatti,
+          il
+          contatto con la natura influenza il benessere mentale e migliora l'umore. I nostri alloggi, <strong>immersi
+            nella
+            natura</strong>,
+          vi permetteranno di svegliarvi con il cinguettio degli uccelli e di ammirare il paesaggio mentre fate
+          colazione.
+          Il pernottamento è consigliabile ma <strong>non obblgatorio</strong>: è possibile prenotare singole esperienze
+          da
+          vivere in
+          giornata</p>
 
-    <a class="alloggi" href="#section_alloggi" style="display: block;">
-      <div class="d-flex justify-content-center align-items-center w-100" style="border-radius: 5px; height: 85px;">
-        <div style="background: rgba(241, 248, 240, 0.5); border-radius: 5px;" class="w-50 text-center">
-          <h1 style="color: var(--bluNavy);">Alloggi</h1>
+        <div class="row booking_types">
+          <div class="col-12 col-md-6">
+            <a class="alloggi" href="#section_alloggi" style="display: block;">
+              <div class="image_wrapper d-flex justify-content-center align-items-center w-100">
+                <div style="background: rgba(241, 248, 240, 0.5); border-radius: 5px;" class="p-1 w-50 text-center p-1">
+                  <h1 style="color: var(--bluNavy);">Alloggi</h1>
+                  <button class="btn btn-info d-none d-md-inline-block">Mostra di più</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6">
+            <a class="esperienze" href="#section_esperienze" style="display: block;">
+              <div class="image_wrapper d-flex justify-content-center align-items-center w-100">
+                <div style="background: rgba(241, 248, 240, 0.5); border-radius: 5px;" class="w-50 text-center p-1">
+                  <h1 style="color: var(--verdeForesta);">Esperienze</h1>
+                  <button class="btn btn-info d-none d-md-inline-block">Mostra di più</button>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-    </a>
+    </div>
 
-    <a class="esperienze pointer" href="#section_esperienze" style="display: block;">
-      <div class="d-flex justify-content-center align-items-center w-100" style="border-radius: 5px; height: 85px;">
-        <div style="background: rgba(241, 248, 240, 0.5); border-radius: 5px;" class="w-50 text-center">
-          <h1 style="color: var(--verdeForesta);">Esperienze</h1>
-        </div>
-      </div>
-    </a>
 
     <div class="alloggi_cards" id="section_alloggi">
       <h2 style="color: var(--verdeForesta); padding-top: 30px;">Alloggi</h2>
 
       <div class="swiper swiper1" style="margin-top: 30px;">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
+        <div class="swiper-wrapper row">
+          <div class="swiper-slide col-md-12">
             <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
-              <img src="assets/immagini/booking/alloggio1.jpg" class="card-img-top" alt="casa-del-pino">
-              <div class="card-body" style="background-color: var(--melaVerde);">
-                <div class="card_heart">
-                  <h2 class="card-title" style="color: var(--verdeForesta)">Casa del Pino</h2>
-                  <img src="assets/immagini/booking/heart.png" alt="heart">
+              <div class="card-horizontal">
+                <div>
+                  <img src="assets/immagini/booking/alloggio1.jpg" class="card_img" alt="casa del pino">
                 </div>
-                <div class="stelline">
-                  <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
-                  <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
-                  <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
-                  <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
-                  <img src="assets/immagini/booking/star.png" alt="star">
-                </div>
-                <div class="card_1_wrapper" data-name="pino">
-                  <p class="card-text" style="margin-top: 10px;">
-                    Soggiornare qui ti farà provare un'esperienza unica.
-                    Sospesa a 15 metri di altezza, la casa del pino offre tutte le comodità e una vista pazzesca sul
-                    bosco circostante. Non mancano, ovviamente, tutti i confort: dal condizionatore, alla rete internet,
-                    anche se non vi serviranno perché rimarrete affascinati dalla natura che vi circonda.
-                  </p>
-                </div>
-                <div class="icone_alloggi">
-                  <img src="assets/icone/ac.svg" alt="ac">
-                  <img src="assets/icone/tv.svg" alt="tv">
-                  <img src="assets/icone/wifi.svg" alt="wifi">
-                </div>
-                <div class="d-flex justify-content-between align-items-center" style="margin-top: 30px;">
-                  <div class="payment">
-                    <p>da</p>
-                    <p style="font-size: 40px;">60€</p>
-                    <p>a notte</p>
+                <div class="card-body align-items-center d-flex justify-content-center"
+                  style="background-color: var(--melaVerde);">
+                  <div>
+                    <div class="card_heart">
+                      <h2 class="card-title" style="color: var(--verdeForesta)">Casa del Pino</h2>
+                      <img src="assets/immagini/booking/heart.png" alt="heart">
+                    </div>
+                    <div class="stelline">
+                      <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
+                      <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
+                      <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
+                      <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
+                      <img src="assets/immagini/booking/star.png" alt="star">
+                    </div>
+                    <div class="card_1_wrapper" data-name="pino">
+                      <p class="card-text" style="margin-top: 10px;">
+                        Soggiornare qui ti farà provare un'esperienza unica.
+                        Sospesa a 15 metri di altezza, la casa del pino offre tutte le comodità e una vista pazzesca sul
+                        bosco circostante. Non mancano, ovviamente, tutti i confort: dal condizionatore, alla rete
+                        internet,
+                        anche se non vi serviranno perché rimarrete affascinati dalla natura che vi circonda.
+                      </p>
+                    </div>
+                    <div class="icone_alloggi d-md-none">
+                      <img src="assets/icone/ac.svg" alt="ac">
+                      <img src="assets/icone/tv.svg" alt="tv">
+                      <img src="assets/icone/wifi.svg" alt="wifi">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center" style="margin-top: 30px;">
+                      <div class="d-flex">
+                        <div class="payment">
+                          <p>da</p>
+                          <p style="font-size: 40px;">60€</p>
+                          <p>a notte</p>
+                        </div>
+                        <div class="icone_alloggi ml-5 d-none d-md-block">
+                          <img src="assets/icone/ac.svg" alt="ac">
+                          <img src="assets/icone/tv.svg" alt="tv">
+                          <img src="assets/icone/wifi.svg" alt="wifi">
+                        </div>
+                      </div>
+                      <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</a>
+                    </div>
                   </div>
-                  <a href="#" class="btn btn-secondary">Prenota</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide col-md-12">
+            <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
+              <div class="card-horizontal">
+                <div>
+                  <img src="assets/immagini/booking/alloggio2.jpg" class="card_img" alt="casa-della-palma">
+                </div>
+                <div class="card-body align-items-center d-flex justify-content-center"
+                  style="background-color: var(--melaVerde);">
+                  <div>
+                    <div class="card_heart">
+                      <h2 class="card-title" style="color: var(--verdeForesta)">Casa della palma</h2>
+                      <img src="assets/immagini/booking/heart.png" alt="heart">
+                    </div>
+                    <div class="stelline">
+                      <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
+                      <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
+                      <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
+                      <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
+                      <img src="assets/immagini/booking/star.png" alt="star">
+                    </div>
+                    <div class="card_1_wrapper" data-name="casa-palma">
+                      <p class="card-text" style="margin-top: 10px;">
+                        La casa della palma è sicuramente una sistemazione adatta agli amanti del campeggio. Formata da
+                        una
+                        tensostruttura, offre a coloro che amano dormire in tenda una soluzione più comoda e
+                        all'avanguardia. Chi soggiornerà in questa struttura avrà anche a disposizione, incluse nel
+                        prezzo,
+                        delle bici per espolare l'isola.
+                      </p>
+
+                    </div>
+                    <div class="icone_alloggi d-md-none">
+                      <img src="assets/icone/bike.svg" alt="bike" class="pointer" title="Bici">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center" style="margin-top: 30px;">
+                      <div class="d-flex">
+                        <div class="payment">
+                          <p>da</p>
+                          <p style="font-size: 40px;">60€</p>
+                          <p>a notte</p>
+                        </div>
+                        <div class="icone_alloggi ml-5 d-none d-md-block">
+                          <img src="assets/icone/bike.svg" alt="bike" class="pointer" title="Bici">
+                        </div>
+                      </div>
+                      <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="swiper-slide col-md-12">
+            <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
+              <div class="card-horizontal">
+                <div>
+                  <img src="assets/immagini/booking/alloggio3.jpg" class="card_img" alt="casa-del-muschio">
+                </div>
+                <div class="card-body align-items-center d-flex justify-content-center"
+                  style="background-color: var(--melaVerde);">
+                  <div>
+                    <div class="card_heart">
+                      <h2 class="card-title" style="color: var(--verdeForesta)">Casa del Muschio</h2>
+                      <img src="assets/immagini/booking/heart.png" alt="heart">
+                    </div>
+                    <div class="stelline">
+                      <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
+                      <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
+                      <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
+                      <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
+                      <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
+                    </div>
+                    <div class="card_1_wrapper" data-name="casa-palma">
+                      <p class="card-text" style="margin-top: 10px;">
+                        Collocate ai piedi del monte principale, il complesso di abitazioni de la casa del muschio sono
+                        la
+                        base ideale per le escursioni montane. Queste strutture offrono un nido accogliente per un fine
+                        settimana da sogno. Il piccolo open space è completamente autonomo e per l'elettricità e il
+                        riscaldamento vengono utilizzate solo fonti rinnovabili come l'energia geotermica e eolica.
+                      </p>
+
+                    </div>
+                    <div class="icone_alloggi d-md-none">
+                      <img src="assets/icone/bike.svg" alt="bike">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center" style="margin-top: 30px;">
+                      <div class="d-flex">
+                        <div class="payment">
+                          <p>da</p>
+                          <p style="font-size: 40px;">80€</p>
+                          <p>a notte</p>
+                        </div>
+                        <div class="icone_alloggi ml-5 d-none d-md-block">
+                          <img src="assets/icone/bike.svg" alt="bike" class="pointer" title="Bici">
+
+                        </div>
+                      </div>
+                      <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="swiper-slide">
+
+          <div class="swiper-slide col-md-12">
             <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
-              <img src="assets/immagini/booking/alloggio2.jpg" class="card-img-top" alt="casa-della-palma">
-              <div class="card-body" style="background-color: var(--melaVerde);">
-                <div class="card_heart">
-                  <h2 class="card-title" style="color: var(--verdeForesta)">Casa della palma</h2>
-                  <img src="assets/immagini/booking/heart.png" alt="heart">
+              <div class="card-horizontal">
+                <div>
+                  <img src="assets/immagini/booking/alloggio4.jpg" class="card_img" alt="casa-dell-abete">
                 </div>
-                <div class="stelline">
-                  <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
-                  <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
-                  <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
-                  <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
-                  <img src="assets/immagini/booking/star.png" alt="star">
-                </div>
-                <div class="card_1_wrapper" data-name="casa-palma">
-                  <p class="card-text" style="margin-top: 10px;">
-                    La casa della palma è sicuramente una sistemazione adatta agli amanti del campeggio. Formata da una
-                    tensostruttura, offre a coloro che amano dormire in tenda una soluzione più comoda e
-                    all'avanguardia. Chi soggiornerà in questa struttura avrà anche a disposizione, incluse nel prezzo,
-                    delle bici per espolare l'isola.
-                  </p>
+                <div class="card-body align-items-center d-flex justify-content-center"
+                  style="background-color: var(--melaVerde);">
+                  <div>
+                    <div class="card_heart">
+                      <h2 class="card-title" style="color: var(--verdeForesta)">Casa dell'Abete</h2>
+                      <img src="assets/immagini/booking/heart.png" alt="heart">
+                    </div>
+                    <div class="stelline">
+                      <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
+                      <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
+                      <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
+                      <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
+                      <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
+                    </div>
+                    <div class="card_1_wrapper" data-name="casa-palma">
+                      <p class="card-text" style="margin-top: 10px;">
+                        Questa casa immersa nella natura si trova all'interno della foresta di Komorebi. Completamente
+                        autonoma e isolata offre una soluzione ideale per chi cerca una fuga dal caos delle città del
+                        mondo.
+                        Un cottage con tutti i servizi che si possono desiderare a pieno contatto con la flora e la
+                        fauna
+                        dell'isola. Meta molto ambita per gli appassionati di birdwatching e di mountain bike.
+                      </p>
 
-                </div>
-                <div class="icone_alloggi">
-                  
-                  <img src="assets/icone/bike.svg" alt="bike" class="pointer" data-toggle="tooltip" data-placement="top" title="Bici">
-                </div>
-                <div class="d-flex justify-content-between align-items-center" style="margin-top: 30px;">
-                  <div class="payment">
-                    <p>da</p>
-                    <p style="font-size: 40px;">60€</p>
-                    <p>a notte</p>
+                    </div>
+                    <div class="icone_alloggi d-md-none">
+                      <img src="assets/icone/bike.svg" alt="bike">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center" style="margin-top: 30px;">
+                      <div class="d-flex">
+                        <div class="payment">
+                          <p>da</p>
+                          <p style="font-size: 40px;">65€</p>
+                          <p>a notte</p>
+                        </div>
+                        <div class="icone_alloggi ml-5 d-none d-md-block">
+                          <img src="assets/icone/ac.svg" alt="ac">
+                          <img src="assets/icone/tv.svg" alt="tv">
+                          <img src="assets/icone/wifi.svg" alt="wifi">
+                          <img src="assets/icone/bike.svg" alt="bici" class="pointer" title="Bici">
+                        </div>
+                      </div>
+                      <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</a>
+                    </div>
                   </div>
-                  <a href="#" class="btn btn-secondary">Prenota</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
-              <img src="assets/immagini/booking/alloggio3.jpg" class="card-img-top" alt="casa-del-muschio">
-              <div class="card-body" style="background-color: var(--melaVerde);">
-                <div class="card_heart">
-                  <h2 class="card-title" style="color: var(--verdeForesta)">Casa del Muschio</h2>
-                  <img src="assets/immagini/booking/heart.png" alt="heart">
-                </div>
-                <div class="stelline">
-                  <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
-                  <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
-                  <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
-                  <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
-                  <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
-                </div>
-                <div class="card_1_wrapper" data-name="casa-palma">
-                  <p class="card-text" style="margin-top: 10px;">
-                    Collocate ai piedi del monte principale, il complesso di abitazioni de la casa del muschio sono la
-                    base ideale per le escursioni montane. Queste strutture offrono un nido accogliente per un fine
-                    settimana da sogno. Il piccolo open space è completamente autonomo e per l'elettricità e il
-                    riscaldamento vengono utilizzate solo fonti rinnovabili come l'energia geotermica e eolica.
-                  </p>
-
-                </div>
-                <div class="icone_alloggi">
-                  <img src="assets/icone/bike.svg" alt="bike">
-                </div>
-                <div class="d-flex justify-content-between align-items-center" style="margin-top: 30px;">
-                  <div class="payment">
-                    <p>da</p>
-                    <p style="font-size: 40px;">80€</p>
-                    <p>a notte</p>
-                  </div>
-                  <a href="#" class="btn btn-secondary">Prenota</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="swiper-slide">
-            <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
-              <img src="assets/immagini/booking/alloggio4.jpg" class="card-img-top" alt="casa-dell-abete">
-              <div class="card-body" style="background-color: var(--melaVerde);">
-                <div class="card_heart">
-                  <h2 class="card-title" style="color: var(--verdeForesta)">Casa dell'Abete</h2>
-                  <img src="assets/immagini/booking/heart.png" alt="heart">
-                </div>
-                <div class="stelline">
-                  <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
-                  <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
-                  <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
-                  <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
-                  <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
-                </div>
-                <div class="card_1_wrapper" data-name="casa-palma">
-                  <p class="card-text" style="margin-top: 10px;">
-                    Questa casa immersa nella natura si trova all'interno della foresta di Komorebi. Completamente
-                    autonoma e isolata offre una soluzione ideale per chi cerca una fuga dal caos delle città del mondo.
-                    Un cottage con tutti i servizi che si possono desiderare a pieno contatto con la flora e la fauna
-                    dell'isola. Meta molto ambita per gli appassionati di birdwatching e di mountain bike.
-                  </p>
-
-                </div>
-                <div class="icone_alloggi">
-                  <img src="assets/icone/bike.svg" alt="bike">
-                </div>
-                <div class="d-flex justify-content-between align-items-center" style="margin-top: 30px;">
-                  <div class="payment">
-                    <p>da</p>
-                    <p style="font-size: 40px;">65€</p>
-                    <p>a notte</p>
-                  </div>
-                  <a href="#" class="btn btn-secondary">Prenota</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="swiper-pagination swiper-pagination1" style="position: initial;"></div>
+      <div class="swiper-pagination swiper-pagination1 d-md-none" style="position: initial;"></div>
     </div>
 
 
     <div class="esperienze_cards" id="section_esperienze" style="padding-top: 30px;">
       <h2 style="color: var(--verdeForesta);">Esperienze</h2>
       <div class="swiper swiper2" style="margin-top: 30px;">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
+        <div class="swiper-wrapper row">
+          <div class="swiper-slide col-md-4">
             <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
               <img src="assets/immagini/booking/mtb.jpg" class="card-img-top" alt="mtb">
               <div class="card-body" style="background-color: var(--bluCeleste);">
@@ -257,16 +339,18 @@
                   <img src="assets/immagini/booking/heart.png" alt="heart">
                 </div>
                 <div class="d-flex justify-content-between align-items-center mt-3">
-                  <div class="payment">
-                    <p style="color: var(--resina)">a partire da</p>
-                    <p style="font-size: 40px; color: var(--resina);">€40</p>
+                  <div class="d-flex">
+                    <div class="payment">
+                      <p style="color: var(--resina)">a partire da</p>
+                      <p style="font-size: 40px; color: var(--resina);">€40</p>
+                    </div>
                   </div>
-                  <a href=" #" class="btn btn-secondary">Prenota</a>
+                  <a href=" #" class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide col-md-4">
             <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
               <img src="assets/immagini/booking/mongolfiera.jpg" class="card-img-top" alt="mongolfiera">
               <div class="card-body" style="background-color: var(--bluCeleste);">
@@ -284,7 +368,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide col-md-4">
             <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
               <img src="assets/immagini/booking/botanica.jpg" class="card-img-top" alt="botanica">
               <div class="card-body" style="background-color: var(--bluCeleste);">
@@ -297,13 +381,12 @@
                     <p style="color: var(--resina)">a partire da</p>
                     <p style="font-size: 40px; color: var(--resina);">€50</p>
                   </div>
-                  <a href=" #" class="btn btn-secondary">Prenota</a>
+                  <a href=" #" class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</a>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="swiper-slide">
+          <div class="swiper-slide col-md-4">
             <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
               <img src="assets/immagini/booking/trekking.jpg" class="card-img-top" alt="trekking">
               <div class="card-body" style="background-color: var(--bluCeleste);">
@@ -316,13 +399,13 @@
                     <p style="color: var(--resina)">a partire da</p>
                     <p style="font-size: 40px; color: var(--resina);">€40</p>
                   </div>
-                  <a href=" #" class="btn btn-secondary">Prenota</a>
+                  <a href=" #" class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="swiper-slide">
+          <div class="swiper-slide col-md-4">
             <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
               <img src="assets/immagini/booking/pranzo.jpg" class="card-img-top" alt="pranzo">
               <div class="card-body" style="background-color: var(--bluCeleste);">
@@ -335,13 +418,13 @@
                     <p style="color: var(--resina)">a partire da</p>
                     <p style="font-size: 40px; color: var(--resina);">€40</p>
                   </div>
-                  <a href=" #" class="btn btn-secondary">Prenota</a>
+                  <a href=" #" class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="swiper-slide">
+          <div class="swiper-slide col-md-4">
             <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
               <img src="assets/immagini/booking/yoga.jpg" class="card-img-top" alt="yoga">
               <div class="card-body" style="background-color: var(--bluCeleste);">
@@ -354,7 +437,7 @@
                     <p style="color: var(--resina)">a partire da</p>
                     <p style="font-size: 40px; color: var(--resina);">€40</p>
                   </div>
-                  <a href=" #" class="btn btn-secondary">Prenota</a>
+                  <a href=" #" class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</a>
                 </div>
               </div>
             </div>
@@ -400,15 +483,15 @@
       <div class="separator"></div>
       <div>
         <p class="section_title">COME RAGGIUNGERCI</p>
-        <p>Mongolfiera</p>
-        <p>Dirigibile</p>
-        <p>Deltaplano</p>
+        <p><a href="reach-us.html">Mongolfiera</a></p>
+        <p><a href="reach-us.html">Dirigibile</a></p>
+        <p><a href="reach-us.html">Deltaplano</a></p>
       </div>
       <div class="separator"></div>
       <div>
         <p class="section_title">PRENOTA UN'ESPERIENZA</p>
-        <p>Dove soggiornare</p>
-        <p>Esperienze</p>
+        <p><a href="booking.html#section_alloggi">Dove soggiornare</a></p>
+        <p><a href="booking.html#section_esperienze">Esperienze</a></p>
       </div>
     </div>
     <div>
@@ -441,7 +524,20 @@
   </div>
 
 
+  <div class="modal fade" id="modal_booking" data-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered h-100">
+      <div class="modal-content">
+        <div class="modal-body d-flex justify-content-center align-items-center" style="min-height: 70vh;">
+          <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close"
+            style="right: 10px;top:10px;">
+            <span aria-hidden="true" style="color:var(--resina)">&times;</span>
+          </button>
 
+          <p class="w-75">Le prenotazioni in questo periodo sono chiuse</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- Optional JavaScript; choose one of the two! -->

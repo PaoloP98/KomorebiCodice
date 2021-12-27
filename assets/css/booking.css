@@ -1,0 +1,13 @@
+.booking_types .image_wrapper {
+    border-radius: 5px;
+    height: 85px;
+}
+
+@media (min-width: 992px) {
+    .booking_types .image_wrapper {
+        height: 300px;
+    }
+    .swiper-slide  {
+        flex-shrink: unset;
+    }
+}

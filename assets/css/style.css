@@ -78,6 +78,19 @@ html, body {
     color: var(--gordonsGreen);
 }
 
+.btn-info {
+    background-color: var(--bluCeleste);
+    border-color: var(--bluCeleste);
+    text-transform: uppercase;
+    color: var(--resina);
+}
+.btn-info:hover, .btn-info:active {
+    background-color: var(--bluNavy);
+    border-color: var(--bluNavy);
+    color: var(--resina);
+}
+
+
 /* .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
     color: var(--resina) !important;
     background-color: var(--melaVerde) !important;
@@ -95,6 +108,7 @@ html, body {
 
 .modal-content {
     background-color: var(--verdeForesta);
+    border-radius: 5px;
 }
 
 .modal-content p {
@@ -193,7 +207,6 @@ p {
     color: var(--verdeForesta);
     font-weight: bold;
 }
-
 
 
 header {
@@ -411,7 +424,7 @@ header .logo {
     margin-top: 40px;
 }
 
-.footer p {
+.footer p, .footer a {
     color: var(--resina);
     text-align: center;
     font-size: 14px;
@@ -440,6 +453,17 @@ header .logo {
 /* -------------------------------------------------------------------------- */
 /*                                    Card                                    */
 /* -------------------------------------------------------------------------- */
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
+.card_img {
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                    HERO                                    */
@@ -569,7 +593,18 @@ header .logo {
     height: fit-content;
 }
 
-@media (min-width: 576px) {}
+@media (min-width: 776px) {
+    .card-horizontal {
+        flex-direction: row;
+    }
+
+    .card_img {
+        max-height: none;
+        width: auto;
+        max-width: 250px;
+        height: 100%;
+    }
+}
 
 @media (min-width:992px) {
     .hero_img .hero_overlay {
@@ -722,7 +757,7 @@ header .logo {
     /* -------------------------------------------------------------------------- */
     /*                                    Card                                    */
     /* -------------------------------------------------------------------------- */
- 
+
 
     .card_1_wrapper {
         cursor: initial;
