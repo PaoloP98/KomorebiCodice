@@ -84,6 +84,7 @@ html, body {
     text-transform: uppercase;
     color: var(--resina);
 }
+
 .btn-info:hover, .btn-info:active {
     background-color: var(--bluNavy);
     border-color: var(--bluNavy);
@@ -188,6 +189,40 @@ p {
     font-family: 'Manrope', sans-serif;
     color: var(--gordonsGreen);
     margin: 0px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Text colors                                */
+/* -------------------------------------------------------------------------- */
+.text-res {
+    color: var(--resina);
+}
+
+.text-vf {
+    color: var(--verdeForesta);
+}
+
+.text-mv {
+    color: var(--melaVerde);
+}
+
+.text-bc {
+    color: var(--bluCeleste);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Background colors                             */
+/* -------------------------------------------------------------------------- */
+.bg-vf {
+    background-color: var(--verdeForesta);
+}
+
+.bg-mv {
+    background-color: var(--melaVerde);
+}
+
+.bg-bc {
+    background-color: var(--bluCeleste);
 }
 
 .containerKomorebi {
@@ -453,7 +488,12 @@ header .logo {
 /* -------------------------------------------------------------------------- */
 /*                                    Card                                    */
 /* -------------------------------------------------------------------------- */
-.card-horizontal {
+.card {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card_house_wrapper {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
@@ -594,7 +634,7 @@ header .logo {
 }
 
 @media (min-width: 776px) {
-    .card-horizontal {
+    .card_house_wrapper {
         flex-direction: row;
     }
 
@@ -840,14 +880,14 @@ header .logo {
     align-items: center;
 }
 
-.icone_alloggi {
+.house_service {
     margin-top: 10px;
     display: flex;
     justify-content: flex-start;
     column-gap: 55px;
 }
 
-.icone_alloggi img {
+.house_service img {
     filter: invert(21%) sepia(39%) saturate(2993%) hue-rotate(173deg) brightness(97%) contrast(98%);
 }
 

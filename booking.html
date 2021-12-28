@@ -43,7 +43,7 @@
           </li>
           <li><a href="live-in-komorebi.html"><span></span><span>Vivere a Komorebi</span></a></li>
           <li><a href="reach-us.html"><span></span><span>Come raggiungerci</span></a></li>
-          <li class="active"><a href="booking.html"><span></span><span>Prenota un'esperienza</span></a></li>
+          <li class="active"><a href="booking.html"><span></span><span>Prenota</span></a></li>
           <li><a href="adopt.html"><span></span><span>Adotta un albero</span></a></li>
         </ul>
       </div>
@@ -54,7 +54,7 @@
   <div class="containerKomorebi pb-tree min-vh-100">
     <div class="row">
       <div class="col-lg-10 mx-auto">
-        <h1 style="color: var(--verdeForesta); margin-top: 30px;">Prenota un alloggio o un'esperienza</h1>
+        <h1 class="text-vf" style="margin-top: 30px;">Prenota un alloggio o un'esperienza</h1>
         <p><strong>Komorebi vi aspetta!</strong> Sull'isola si possono svolgere attività di ogni genere: dall'avventura
           alla
           meditazione,
@@ -75,7 +75,7 @@
             <a class="alloggi" href="#section_alloggi" style="display: block;">
               <div class="image_wrapper d-flex justify-content-center align-items-center w-100">
                 <div style="background: rgba(241, 248, 240, 0.5); border-radius: 5px;" class="p-1 w-50 text-center p-1">
-                  <h1 style="color: var(--bluNavy);">Alloggi</h1>
+                  <h1 class="text-bc">Alloggi</h1>
                   <button class="btn btn-info d-none d-md-inline-block">Mostra di più</button>
                 </div>
               </div>
@@ -85,7 +85,7 @@
             <a class="esperienze" href="#section_esperienze" style="display: block;">
               <div class="image_wrapper d-flex justify-content-center align-items-center w-100">
                 <div style="background: rgba(241, 248, 240, 0.5); border-radius: 5px;" class="w-50 text-center p-1">
-                  <h1 style="color: var(--verdeForesta);">Esperienze</h1>
+                  <h1 class="text-vf">Esperienze</h1>
                   <button class="btn btn-info d-none d-md-inline-block">Mostra di più</button>
                 </div>
               </div>
@@ -96,32 +96,31 @@
     </div>
 
 
-    <div class="alloggi_cards" id="section_alloggi">
-      <h2 style="color: var(--verdeForesta); padding-top: 30px;">Alloggi</h2>
+    <div id="section_alloggi">
+      <h2 class="text-vf" style="padding-top: 30px;">Alloggi</h2>
 
       <div class="swiper swiper1" style="margin-top: 30px;">
         <div class="swiper-wrapper row">
           <div class="swiper-slide house-swiper-slide col-md-12">
-            <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
-              <div class="card-horizontal">
+            <div class="card mb-4">
+              <div class="card_house_wrapper">
                 <div>
                   <img src="assets/immagini/booking/alloggio1.jpg" class="card_img" alt="casa del pino">
                 </div>
-                <div class="card-body align-items-center d-flex justify-content-center"
-                  style="background-color: var(--melaVerde);">
+                <div class="card-body align-items-center d-flex justify-content-center bg-mv">
                   <div>
                     <div class="card_heart">
-                      <h2 class="card-title" style="color: var(--verdeForesta)">Casa del Pino</h2>
+                      <h2 class="card-title text-vf">Casa del Pino</h2>
                       <img src="assets/immagini/booking/heart.png" alt="heart">
                     </div>
-                    <div class="stelline">
+                    <div>
                       <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
                       <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
                       <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
                       <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
                       <img src="assets/immagini/booking/star.png" alt="star">
                     </div>
-                    <div class="card_1_wrapper" data-name="pino">
+                    <div>
                       <p class="card-text" style="margin-top: 10px;">
                         Soggiornare qui ti farà provare un'esperienza unica.
                         Sospesa a 15 metri di altezza, la casa del pino offre tutte le comodità e una vista pazzesca sul
@@ -130,7 +129,7 @@
                         anche se non vi serviranno perché rimarrete affascinati dalla natura che vi circonda.
                       </p>
                     </div>
-                    <div class="icone_alloggi d-md-none">
+                    <div class="house_service d-md-none">
                       <img src="assets/icone/ac.svg" alt="ac">
                       <img src="assets/icone/tv.svg" alt="tv">
                       <img src="assets/icone/wifi.svg" alt="wifi">
@@ -139,45 +138,44 @@
                       <div class="d-flex">
                         <div class="payment">
                           <p>da</p>
-                          <p style="font-size: 40px;">60€</p>
+                          <p style="font-size: 40px;">€60</p>
                           <p>a notte</p>
                         </div>
-                        <div class="icone_alloggi ml-5 d-none d-md-block">
-                          <img src="assets/icone/ac.svg" alt="ac">
-                          <img src="assets/icone/tv.svg" alt="tv">
-                          <img src="assets/icone/wifi.svg" alt="wifi">
+                        <div class="house_service ml-5 d-none d-md-block">
+                          <img src="assets/icone/ac.svg" alt="ac" class="pointer" title="Aria condizionata">
+                          <img src="assets/icone/tv.svg" alt="tv" class="pointer" title="Televisione">
+                          <img src="assets/icone/wifi.svg" alt="wifi" class="pointer" title="Wifi">
                         </div>
                       </div>
-                      <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</a>
+                      <button class="btn btn-secondary" data-toggle="modal"
+                        data-target="#modal_booking">Prenota</button>
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
 
           <div class="swiper-slide house-swiper-slide col-md-12">
-            <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
-              <div class="card-horizontal">
+            <div class="card mb-4">
+              <div class="card_house_wrapper">
                 <div>
                   <img src="assets/immagini/booking/alloggio2.jpg" class="card_img" alt="casa-della-palma">
                 </div>
-                <div class="card-body align-items-center d-flex justify-content-center"
-                  style="background-color: var(--melaVerde);">
+                <div class="card-body align-items-center d-flex justify-content-center bg-mv">
                   <div>
                     <div class="card_heart">
-                      <h2 class="card-title" style="color: var(--verdeForesta)">Casa della palma</h2>
+                      <h2 class="card-title text-vf">Casa della palma</h2>
                       <img src="assets/immagini/booking/heart.png" alt="heart">
                     </div>
-                    <div class="stelline">
+                    <div>
                       <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
                       <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
                       <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
                       <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
                       <img src="assets/immagini/booking/star.png" alt="star">
                     </div>
-                    <div class="card_1_wrapper" data-name="casa-palma">
+                    <div>
                       <p class="card-text" style="margin-top: 10px;">
                         La casa della palma è sicuramente una sistemazione adatta agli amanti del campeggio. Formata da
                         una
@@ -188,21 +186,22 @@
                       </p>
 
                     </div>
-                    <div class="icone_alloggi d-md-none">
+                    <div class="house_service d-md-none">
                       <img src="assets/icone/bike.svg" alt="bike" class="pointer" title="Bici">
                     </div>
                     <div class="d-flex justify-content-between align-items-center" style="margin-top: 30px;">
                       <div class="d-flex">
                         <div class="payment">
                           <p>da</p>
-                          <p style="font-size: 40px;">60€</p>
+                          <p style="font-size: 40px;">€60</p>
                           <p>a notte</p>
                         </div>
-                        <div class="icone_alloggi ml-5 d-none d-md-block">
+                        <div class="house_service ml-5 d-none d-md-block">
                           <img src="assets/icone/bike.svg" alt="bike" class="pointer" title="Bici">
                         </div>
                       </div>
-                      <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</a>
+                      <button class="btn btn-secondary" data-toggle="modal"
+                        data-target="#modal_booking">Prenota</button>
                     </div>
                   </div>
                 </div>
@@ -212,26 +211,25 @@
           </div>
 
           <div class="swiper-slide house-swiper-slide col-md-12">
-            <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
-              <div class="card-horizontal">
+            <div class="card mb-4">
+              <div class="card_house_wrapper">
                 <div>
                   <img src="assets/immagini/booking/alloggio3.jpg" class="card_img" alt="casa-del-muschio">
                 </div>
-                <div class="card-body align-items-center d-flex justify-content-center"
-                  style="background-color: var(--melaVerde);">
+                <div class="card-body align-items-center d-flex justify-content-center bg-mv">
                   <div>
                     <div class="card_heart">
-                      <h2 class="card-title" style="color: var(--verdeForesta)">Casa del Muschio</h2>
+                      <h2 class="card-title text-vf">Casa del Muschio</h2>
                       <img src="assets/immagini/booking/heart.png" alt="heart">
                     </div>
-                    <div class="stelline">
+                    <div>
                       <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
                       <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
                       <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
                       <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
                       <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
                     </div>
-                    <div class="card_1_wrapper" data-name="casa-palma">
+                    <div>
                       <p class="card-text" style="margin-top: 10px;">
                         Collocate ai piedi del monte principale, il complesso di abitazioni de la casa del muschio sono
                         la
@@ -241,22 +239,24 @@
                       </p>
 
                     </div>
-                    <div class="icone_alloggi d-md-none">
-                      <img src="assets/icone/bike.svg" alt="bike">
+                    <div class="house_service d-md-none">
+                      <img src="assets/icone/ac.svg" alt="ac" class="pointer" title="Aria condizionata">
+                      <img src="assets/icone/bike.svg" alt="bike" class="pointer" title="Bici">
                     </div>
                     <div class="d-flex justify-content-between align-items-center" style="margin-top: 30px;">
                       <div class="d-flex">
                         <div class="payment">
                           <p>da</p>
-                          <p style="font-size: 40px;">80€</p>
+                          <p style="font-size: 40px;">€80</p>
                           <p>a notte</p>
                         </div>
-                        <div class="icone_alloggi ml-5 d-none d-md-block">
+                        <div class="house_service ml-5 d-none d-md-block">
                           <img src="assets/icone/bike.svg" alt="bike" class="pointer" title="Bici">
 
                         </div>
                       </div>
-                      <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</a>
+                      <button class="btn btn-secondary" data-toggle="modal"
+                        data-target="#modal_booking">Prenota</button>
                     </div>
                   </div>
                 </div>
@@ -266,26 +266,25 @@
 
 
           <div class="swiper-slide house-swiper-slide col-md-12">
-            <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
-              <div class="card-horizontal">
+            <div class="card mb-4">
+              <div class="card_house_wrapper">
                 <div>
                   <img src="assets/immagini/booking/alloggio4.jpg" class="card_img" alt="casa-dell-abete">
                 </div>
-                <div class="card-body align-items-center d-flex justify-content-center"
-                  style="background-color: var(--melaVerde);">
+                <div class="card-body align-items-center d-flex justify-content-center bg-mv">
                   <div>
                     <div class="card_heart">
-                      <h2 class="card-title" style="color: var(--verdeForesta)">Casa dell'Abete</h2>
+                      <h2 class="card-title text-vf">Casa dell'Abete</h2>
                       <img src="assets/immagini/booking/heart.png" alt="heart">
                     </div>
-                    <div class="stelline">
+                    <div>
                       <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
                       <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
                       <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
                       <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
                       <img src="assets/immagini/booking/fullstar.png" alt="fullstar">
                     </div>
-                    <div class="card_1_wrapper" data-name="casa-palma">
+                    <div>
                       <p class="card-text" style="margin-top: 10px;">
                         Questa casa immersa nella natura si trova all'interno della foresta di Komorebi. Completamente
                         autonoma e isolata offre una soluzione ideale per chi cerca una fuga dal caos delle città del
@@ -296,24 +295,28 @@
                       </p>
 
                     </div>
-                    <div class="icone_alloggi d-md-none">
-                      <img src="assets/icone/bike.svg" alt="bike">
+                    <div class="house_service d-md-none">
+                      <img src="assets/icone/ac.svg" alt="ac" class="pointer" title="Aria condizionata">
+                      <img src="assets/icone/tv.svg" alt="tv" class="pointer" title="Televisione">
+                      <img src="assets/icone/wifi.svg" alt="wifi" class="pointer" title="Wifi">
+                      <img src="assets/icone/bike.svg" alt="bike" class="pointer" title="Bici">
                     </div>
                     <div class="d-flex justify-content-between align-items-center" style="margin-top: 30px;">
                       <div class="d-flex">
                         <div class="payment">
                           <p>da</p>
-                          <p style="font-size: 40px;">65€</p>
+                          <p style="font-size: 40px;">€65</p>
                           <p>a notte</p>
                         </div>
-                        <div class="icone_alloggi ml-5 d-none d-md-block">
+                        <div class="house_service ml-5 d-none d-md-block">
                           <img src="assets/icone/ac.svg" alt="ac">
                           <img src="assets/icone/tv.svg" alt="tv">
                           <img src="assets/icone/wifi.svg" alt="wifi">
                           <img src="assets/icone/bike.svg" alt="bici" class="pointer" title="Bici">
                         </div>
                       </div>
-                      <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</a>
+                      <button class="btn btn-secondary" data-toggle="modal"
+                        data-target="#modal_booking">Prenota</button>
                     </div>
                   </div>
                 </div>
@@ -326,118 +329,118 @@
     </div>
 
 
-    <div class="esperienze_cards" id="section_esperienze" style="padding-top: 30px;">
-      <h2 style="color: var(--verdeForesta);">Esperienze</h2>
+    <div id="section_esperienze" style="padding-top: 30px;">
+      <h2 class="text-vf">Esperienze</h2>
       <div class="swiper swiper2" style="margin-top: 30px;">
         <div class="swiper-wrapper row">
           <div class="swiper-slide experience-swiper-slide col-md-4">
-            <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
+            <div class="card mb-4">
               <img src="assets/immagini/booking/mtb.jpg" class="card-img-top" alt="mtb">
-              <div class="card-body" style="background-color: var(--bluCeleste);">
+              <div class="card-body bg-bc">
                 <div class="card_heart">
-                  <h2 class="card-title" style="color: var(--resina)">MTB</h2>
+                  <h2 class="card-title text-res">MTB</h2>
                   <img src="assets/immagini/booking/heart.png" alt="heart">
                 </div>
                 <div class="d-flex justify-content-between align-items-center mt-3">
                   <div class="d-flex">
                     <div class="payment">
-                      <p style="color: var(--resina)">a partire da</p>
-                      <p style="font-size: 40px; color: var(--resina);">€40</p>
+                      <p class="text-res">a partire da</p>
+                      <p class="text-res" style="font-size: 40px;">€40</p>
                     </div>
                   </div>
-                  <a href=" #" class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</a>
+                  <button class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</button>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide experience-swiper-slide col-md-4">
-            <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
+            <div class="card mb-4">
               <img src="assets/immagini/booking/mongolfiera.jpg" class="card-img-top" alt="mongolfiera">
-              <div class="card-body" style="background-color: var(--bluCeleste);">
+              <div class="card-body bg-bc">
                 <div class="card_heart">
-                  <h2 class="card-title" style="color: var(--resina)">Giro dell'isola in mongolfiera</h2>
+                  <h2 class="card-title text-res">Giro dell'isola in mongolfiera</h2>
                   <img src="assets/immagini/booking/heart.png" alt="heart">
                 </div>
                 <div class="d-flex justify-content-between align-items-center mt-3">
                   <div class="payment">
-                    <p style="color: var(--resina)">a partire da</p>
-                    <p style="font-size: 40px; color: var(--resina);">€70</p>
+                    <p class="text-res">a partire da</p>
+                    <p class="text-res" style="font-size: 40px;">€70</p>
                   </div>
-                  <a href=" #" class="btn btn-secondary">Prenota</a>
+                  <button class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</button>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide experience-swiper-slide col-md-4">
-            <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
+            <div class="card mb-4">
               <img src="assets/immagini/booking/botanica.jpg" class="card-img-top" alt="botanica">
-              <div class="card-body" style="background-color: var(--bluCeleste);">
+              <div class="card-body bg-bc">
                 <div class="card_heart">
-                  <h2 class="card-title" style="color: var(--resina)">Lezioni di botanica</h2>
+                  <h2 class="card-title text-res">Lezioni di botanica</h2>
                   <img src="assets/immagini/booking/heart.png" alt="heart">
                 </div>
                 <div class="d-flex justify-content-between align-items-center mt-3">
                   <div class="payment">
-                    <p style="color: var(--resina)">a partire da</p>
-                    <p style="font-size: 40px; color: var(--resina);">€50</p>
+                    <p class="text-res">a partire da</p>
+                    <p class="text-res" style="font-size: 40px;">€50</p>
                   </div>
-                  <a href=" #" class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</a>
+                  <button class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</button>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide experience-swiper-slide col-md-4">
-            <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
+            <div class="card mb-4">
               <img src="assets/immagini/booking/trekking.jpg" class="card-img-top" alt="trekking">
-              <div class="card-body" style="background-color: var(--bluCeleste);">
+              <div class="card-body bg-bc">
                 <div class="card_heart">
-                  <h2 class="card-title" style="color: var(--resina)">Trekking</h2>
+                  <h2 class="card-title text-res">Trekking</h2>
                   <img src="assets/immagini/booking/heart.png" alt="heart">
                 </div>
                 <div class="d-flex justify-content-between align-items-center mt-3">
                   <div class="payment">
-                    <p style="color: var(--resina)">a partire da</p>
-                    <p style="font-size: 40px; color: var(--resina);">€40</p>
+                    <p class="text-res">a partire da</p>
+                    <p class="text-res" style="font-size: 40px;">€40</p>
                   </div>
-                  <a href=" #" class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</a>
+                  <button class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</button>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="swiper-slide experience-swiper-slide col-md-4">
-            <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
+            <div class="card mb-4">
               <img src="assets/immagini/booking/pranzo.jpg" class="card-img-top" alt="pranzo">
-              <div class="card-body" style="background-color: var(--bluCeleste);">
+              <div class="card-body bg-bc">
                 <div class="card_heart">
-                  <h2 class="card-title" style="color: var(--resina)">A pranzo dai Komorebiani</h2>
+                  <h2 class="card-title text-res">A pranzo dai Komorebiani</h2>
                   <img src="assets/immagini/booking/heart.png" alt="heart">
                 </div>
                 <div class="d-flex justify-content-between align-items-center mt-3">
                   <div class="payment">
-                    <p style="color: var(--resina)">a partire da</p>
-                    <p style="font-size: 40px; color: var(--resina);">€40</p>
+                    <p class="text-res">a partire da</p>
+                    <p class="text-res" style="font-size: 40px;">€40</p>
                   </div>
-                  <a href=" #" class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</a>
+                  <button class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</button>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="swiper-slide experience-swiper-slide col-md-4">
-            <div class="card mb-3" style="border-radius: 5px; overflow: hidden;">
+            <div class="card mb-4">
               <img src="assets/immagini/booking/yoga.jpg" class="card-img-top" alt="yoga">
-              <div class="card-body" style="background-color: var(--bluCeleste);">
+              <div class="card-body bg-bc">
                 <div class="card_heart">
-                  <h2 class="card-title" style="color: var(--resina)">Yoga tra le nuvole</h2>
+                  <h2 class="card-title text-res">Yoga tra le nuvole</h2>
                   <img src="assets/immagini/booking/heart.png" alt="heart">
                 </div>
                 <div class="d-flex justify-content-between align-items-center mt-3">
                   <div class="payment">
-                    <p style="color: var(--resina)">a partire da</p>
-                    <p style="font-size: 40px; color: var(--resina);">€40</p>
+                    <p class="text-res">a partire da</p>
+                    <p class="text-res" style="font-size: 40px;">€40</p>
                   </div>
-                  <a href=" #" class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</a>
+                  <button class="btn btn-secondary" data-toggle="modal" data-target="#modal_booking">Prenota</button>
                 </div>
               </div>
             </div>
@@ -510,7 +513,8 @@
           </button>
         </div>
         <div class="modal-body" id="modal_detail_body">
-          <p>Soggiornare qui ti farà provare un'esperienza unica. Sospesa a 15 metri di altezza, la casa del pino
+          <p>
+            Soggiornare qui ti farà provare un'esperienza unica. Sospesa a 15 metri di altezza, la casa del pino
             offre
             tutte le comodità e una vista pazzesca sul bosco circostante. Non mancano, ovviamente, tutti i confort:
             dal
@@ -530,10 +534,10 @@
         <div class="modal-body d-flex justify-content-center align-items-center" style="min-height: 70vh;">
           <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close"
             style="right: 10px;top:10px;">
-            <span aria-hidden="true" style="color:var(--resina)">&times;</span>
+            <span aria-hidden="true" class="text-res">&times;</span>
           </button>
 
-          <p class="w-75">Le prenotazioni in questo periodo sono chiuse</p>
+          <p class="w-75 text-res">Le prenotazioni in questo periodo sono chiuse</p>
         </div>
       </div>
     </div>
