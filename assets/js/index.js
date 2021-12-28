@@ -3,7 +3,6 @@ let btnMenuOpen = $("#btn_menu_open");
 let overlay = $("#overlay");
 let selectedIconLiveKomorebi = "";
 
-
 function closeMenu() {
   let menu = $("#menu");
   let overlay = $("#overlay");
@@ -12,11 +11,11 @@ function closeMenu() {
   overlay.removeClass("active");
   $('body').css('overflow', 'auto');
 }
+
 function isHidden(selector) {
   return ($(selector).css('display') == 'none' || $(selector).css("visibility") == "hidden");
-
-
 }
+
 $(".card_1_wrapper").click(function () {
   if (!isHidden('.card_1_txt')) {
     return;
@@ -111,10 +110,10 @@ $(".card_1_wrapper").click(function () {
   $("#modal_detail").modal('show');
 });
 
-
 btnMenuClose.click(() => {
   closeMenu();
 });
+
 btnMenuOpen.click(() => {
   let menu = $("#menu");
   let overlay = $("#overlay");
@@ -123,6 +122,7 @@ btnMenuOpen.click(() => {
   overlay.addClass("active");
   $('body').css('overflow', 'hidden');
 });
+
 overlay.click(() => {
   closeMenu();
 });
@@ -137,18 +137,12 @@ $(document).scroll(() => {
   }
 });
 
-// var swiper = new Swiper(".mySwiper", {
-//   pagination: {
-//     el: ".swiper-pagination",
-//     dynamicBullets: true,
-//   },
-// });
 $('#gallery-explore').carousel
   ({
     interval: 0
-  })
+  });
 
-function iconaMappa(x) {
+function clickMapIcon(x) {
   $(".iconOver").css("visibility", "hidden");
 
   $(".icon-map img").removeClass("active");
@@ -162,8 +156,4 @@ function iconaMappa(x) {
   else {
     selectedIconLiveKomorebi = "";
   }
-
-
-
-
 }
