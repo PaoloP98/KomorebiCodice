@@ -1,22 +1,55 @@
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
+
+
+let swiperTrees = null;
+function initSwipers() {
+  let swiperSlide = $(".swiper-slide");
+  let swiperWrapper = $(".swiper-wrapper");
+  swiperSlide.each((index, slide) => {
+    slide.classList.remove("col-md-4");
+  });
+  swiperWrapper.each((index, wrapper) => {
+    wrapper.classList.remove("row");
+  });
+  swiperTrees = new Swiper('.swiper', {
     loop: true,
-    // effect: 'cards',
     spaceBetween: 30,
     autoHeight: true,
-    // If we need pagination
     pagination: {
       el: '.swiper-pagination',
     },
-  
-    // Navigation arrows
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
-  
-    // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
   });
+}
+function destroySwipers() {
+  swiperTrees?.destroy();
+  swiperTrees = null;
+  let swiperSlide = $(".swiper-slide");
+  let swiperWrapper = $(".swiper-wrapper");
+  swiperSlide.each((index, slide) => {
+    slide.classList.add("col-md-4");
+  });
+  swiperWrapper.each((index, wrapper) => {
+    wrapper.classList.add("row");
+  });
+  $('.swiper-wrapper').removeAttr('style');
+  $('.swiper-slide').removeAttr('style');
+}
+
+function adjustPageItems() {
+  let width = document.documentElement.clientWidth;
+  if (width >= 776) {
+    destroySwipers();
+  }
+  else {
+    if (swiperTrees == null) {
+      initSwipers();
+    }
+  }
+}
+
+$(document).ready(() => {
+  adjustPageItems();
+});
+
+$(window).resize(() => {
+  adjustPageItems();
+});
