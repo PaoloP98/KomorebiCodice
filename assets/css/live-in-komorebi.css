@@ -11,6 +11,7 @@
     margin: 0 auto;
     position: relative;
     padding: 0;
+    flex: 1 0 40%;
 }
 
 .map-wrapper .map {

@@ -6,6 +6,7 @@
     --melaVerde: #aedc98;
     --verdeForesta: #47873e;
     --swiper-theme-color: #aedc98 !important;
+    --komorebi-border-radius: 5px;
 }
 
 html {
@@ -109,7 +110,7 @@ html, body {
 
 .modal-content {
     background-color: var(--verdeForesta);
-    border-radius: 5px;
+    border-radius: var(--komorebi-border-radius);
 }
 
 .modal-content p {
@@ -126,8 +127,9 @@ html, body {
 
 
 
+
 /* -------------------------------------------------------------------------- */
-/*                                    FONT                                    */
+/*                                 TIPOGRAFIA                                 */
 /* -------------------------------------------------------------------------- */
 h1 {
     font-size: 20px;
@@ -139,7 +141,6 @@ h1 {
 h2 {
     font-size: 18px;
     font-family: 'Hearing', sans-serif;
-    line-height: 3px;
     letter-spacing: 0.03rem;
 }
 
@@ -171,7 +172,7 @@ h3 {
     /* margin: 0; */
 }
 
-.header {
+.main_text .header {
     font-size: 70px;
     letter-spacing: 0.07rem;
 }
@@ -208,6 +209,10 @@ p {
 
 .text-bc {
     color: var(--bluCeleste);
+}
+
+.text-bn {
+    color: var(--bluNavy);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -312,12 +317,19 @@ header .logo {
 }
 
 .homepage__wrapper {
+    height: 100vh;
+    width: 100vw;
+}
+
+.home_bg {
+    width: 100%;
+    ;
+    height: 100%;
+    position: absolute;
+    right: 0;
     background-image: url('../immagini/Mong.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
-
 }
 
 .mobile_menu_wrapper {
@@ -488,8 +500,8 @@ header .logo {
 /* -------------------------------------------------------------------------- */
 /*                                    Card                                    */
 /* -------------------------------------------------------------------------- */
-.card {
-    border-radius: 5px;
+.card, .rounded-image {
+    border-radius: var(--komorebi-border-radius);
     overflow: hidden;
 }
 
@@ -503,6 +515,21 @@ header .logo {
     max-height: 250px;
     width: 100%;
     object-fit: cover;
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover
+}
+
+
+/* Heart per adopt e booking */
+.card_heart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -540,7 +567,7 @@ header .logo {
 .hero_explore .hero_overlay, .hero_img .hero_overlay {
     background: rgba(77, 191, 202, 0.8);
     box-shadow: 4px 4px 10px rgba(5, 10, 4, 0.1);
-    border-radius: 5px;
+    border-radius: var(--komorebi-border-radius);
     padding: 30px;
 }
 
@@ -559,7 +586,7 @@ header .logo {
     width: 100%;
     height: 250px;
     background-color: #f2d4d4;
-    border-radius: 5px;
+    border-radius: var(--komorebi-border-radius);
     overflow: hidden;
 
 }
@@ -586,7 +613,7 @@ header .logo {
     text-align: center;
     left: 0;
     right: 0;
-    border-radius: 5px;
+    border-radius: var(--komorebi-border-radius);
     /* min-height: 322px; */
 }
 
@@ -646,11 +673,49 @@ header .logo {
     }
 }
 
+
+
 @media (min-width:992px) {
+
+    /* -------------------------------------------------------------------------- */
+    /*                                 TIPOGRAFIA                                 */
+    /* -------------------------------------------------------------------------- */
+    h1 {
+        font-size: 64px;
+        font-family: 'Hearing', sans-serif;
+        letter-spacing: 0.03rem;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 40px;
+        letter-spacing: 0.03rem;
+    }
+
+    p {
+        font-size: 1.125rem;
+        /*18px*/
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /*                                   0-home                                   */
+    /* -------------------------------------------------------------------------- */
+    .home_bg {
+        width: 58.333333%;
+    }
+
+    .main_text .header {
+        font-size: calc(8rem + 7vw);
+        line-height: calc(3rem + 8vw);
+        /*Remove space below the text baseline*/
+        letter-spacing: 0.07rem;
+    }
+
+
     .hero_img .hero_overlay {
         background: rgba(77, 191, 202, 0.8);
         box-shadow: 4px 4px 10px rgba(5, 10, 4, 0.1);
-        border-radius: 5px;
+        border-radius: var(--komorebi-border-radius);
         flex: 0 0 33.333333%;
         padding: 30px;
     }
@@ -659,7 +724,7 @@ header .logo {
         flex: 0 0 58.333333%;
         max-width: 58.333333%;
         height: 110vh;
-        border-radius: 5px;
+        border-radius: var(--komorebi-border-radius);
     }
 
     .hero_img_desktop_wrapper {
@@ -727,7 +792,7 @@ header .logo {
     }
 
     .mobile_menu_ul>li {
-        font-size: 18px;
+        font-size: calc(0.5rem + 1vw)
     }
 
     .mobile_menu_ul>li, .mobile_menu_ul>li.active {
@@ -842,54 +907,7 @@ header .logo {
 }
 
 
-/* -------------------------------------------------------------------------- */
-/*                           DIRE QUESTO COS'E'                               */
-/* -------------------------------------------------------------------------- */
 
-.tree_price {
-    font-family: Hearing;
-}
-
-.alloggi {
-    background-image: url("../immagini/booking/BGAlloggi.jpg");
-    border-radius: 5px;
-    margin-top: 30px;
-    background-size: cover;
-    background-position: center;
-}
-
-.esperienze {
-    background-image: url("../immagini/booking/BGEsperienze.jpg");
-    border-radius: 5px;
-    margin-top: 30px;
-    background-size: cover;
-    background-position: center;
-}
-
-
-.card-img-top {
-    width: 100%;
-    height: 250px;
-    object-fit: cover
-}
-
-
-.card_heart {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.house_service {
-    margin-top: 10px;
-    display: flex;
-    justify-content: flex-start;
-    column-gap: 55px;
-}
-
-.house_service img {
-    filter: invert(21%) sepia(39%) saturate(2993%) hue-rotate(173deg) brightness(97%) contrast(98%);
-}
 
 .payment p {
     font-family: 'Hearing', sans-serif;

@@ -1,5 +1,34 @@
-.booking_types .image_wrapper {
+.alloggi {
+    background-image: url("../immagini/booking/BGAlloggi.jpg");
     border-radius: 5px;
+    margin-top: 30px;
+    background-size: cover;
+    background-position: center;
+}
+
+.esperienze {
+    background-image: url("../immagini/booking/BGEsperienze.jpg");
+    border-radius: 5px;
+    margin-top: 30px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.house_service {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 55px;
+}
+
+.house_service img {
+    filter: invert(21%) sepia(39%) saturate(2993%) hue-rotate(173deg) brightness(97%) contrast(98%);
+}
+
+
+.booking_types .image_wrapper {
+    border-radius: var(--komorebi-border-radius);
     height: 85px;
 }
 
