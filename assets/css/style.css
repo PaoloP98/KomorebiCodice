@@ -162,7 +162,7 @@ h3 {
     margin-bottom: 16px;
 }
 
-.main_text p, .header {
+.main_text p, .intro-big-text {
     font-family: 'Hearing', sans-serif;
     color: var(--bluNavy);
 }
@@ -172,7 +172,7 @@ h3 {
     /* margin: 0; */
 }
 
-.main_text .header {
+.main_text .intro-big-text {
     font-size: 70px;
     letter-spacing: 0.07rem;
 }
@@ -327,7 +327,7 @@ header .logo {
     height: 100%;
     position: absolute;
     right: 0;
-    background-image: url('../immagini/Mong.png');
+    background-image: url('../images/Mong.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -433,7 +433,7 @@ header .logo {
 
 #alberelli {
     z-index: 997;
-    background-image: url('../immagini/skyline.png');
+    background-image: url('../images/skyline.png');
     background-repeat: repeat-x;
     height: 100px;
     /* width: 100vw; */
@@ -511,12 +511,6 @@ header .logo {
     flex-direction: column;
 }
 
-.card_img {
-    max-height: 250px;
-    width: 100%;
-    object-fit: cover;
-}
-
 
 .card-img-top {
     width: 100%;
@@ -557,11 +551,11 @@ header .logo {
 }
 
 .hero_img.hero_img--choose_to_reuse {
-    background-image: url("../immagini/choose_to_reuse/hero.jpg");
+    background-image: url("../images/choose_to_reuse/hero.jpg");
 }
 
 .hero_img.hero_img--source {
-    background-image: url("../immagini/source/hero.png");
+    background-image: url("../images/source/hero.png");
 }
 
 .hero_explore .hero_overlay, .hero_img .hero_overlay {
@@ -661,21 +655,23 @@ header .logo {
 }
 
 @media (min-width: 776px) {
-    .card_house_wrapper {
-        flex-direction: row;
-    }
-
-    .card_img {
-        max-height: none;
-        width: auto;
-        max-width: 250px;
-        height: 100%;
+    .containerKomorebi {
+        width: calc(100vw - 80px);
+        max-width: 1920px;
+        /* min-height: 100vh; */
+        margin: 0 auto;
+        position: relative;
     }
 }
 
-
-
 @media (min-width:992px) {
+    .containerKomorebi {
+        width: calc(100vw - 160px);
+        max-width: 1920px;
+        /* min-height: 100vh; */
+        margin: 0 auto;
+        position: relative;
+    }
 
     /* -------------------------------------------------------------------------- */
     /*                                 TIPOGRAFIA                                 */
@@ -704,7 +700,7 @@ header .logo {
         width: 58.333333%;
     }
 
-    .main_text .header {
+    .main_text .intro-big-text {
         font-size: calc(8rem + 7vw);
         line-height: calc(3rem + 8vw);
         /*Remove space below the text baseline*/
@@ -815,17 +811,11 @@ header .logo {
     }
 
 
-    .containerKomorebi {
-        width: calc(100vw - 160px);
-        max-width: 1920px;
-        /* min-height: 100vh; */
-        margin: 0 auto;
-        position: relative;
-    }
+
 
 
     #alberelli {
-        background-image: url('../immagini/skyline.png');
+        background-image: url('../images/skyline.png');
         background-repeat: repeat-x;
         height: 100px;
         /* width: 100vw; */

@@ -7,19 +7,17 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
     <meta name="theme-color" content="#aedc98">
     <meta name="description"
-        content="Vivere a Komorebi è la sezione in cui puoi trovare tutte le informazioni che stai cercando e orientarti facilmente per tutta l’isola.">
+        content="Vivere a Komorebi è la sezione in cui puoi trovare tutte le informazioni che stai cercando e orientarti facilmente per tutta l'isola.">
 
     <link rel="icon" type="image/png" href="assets/logo.png" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/live-in-komorebi.css">
+    <link rel="stylesheet" href="./assets/css/2-services_descriptions.css">
 
     <link href="assets/font/Hearing.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
-
-
 
     <title>Komorebi</title>
 </head>
@@ -27,10 +25,10 @@
 <body>
     <header>
         <a href="0-home.html"><img class="logo" src="./assets/logo.png"></a>
-        <img id="btn_menu_open" src="assets/icone/menu.svg">
+        <img id="btn_menu_open" src="assets/icons/menu.svg">
         <div class="menu menu--close" id="menu">
             <div id="btn_menu_close" class="d-flex justify-content-end p-3 pointer">
-                <img class="icon-menu-mobile" src="./assets/icone/close.svg" />
+                <img class="icon-menu-mobile" src="./assets/icons/close.svg" />
             </div>
             <div class="mobile_menu_wrapper">
                 <ul class="mobile_menu_ul">
@@ -76,7 +74,7 @@
                         <div class="icon-map">
                             <div class="pointer" onclick="clickMapIcon('ristoranti')">
                                 <img class="icon-map-ristoranti"
-                                    src="./assets/immagini/live-in-komorebi/icon-restaurant.svg" alt="icon-restaurant">
+                                    src="./assets/images/live-in-komorebi/icon-restaurant.svg" alt="icon-restaurant">
                                 <p class="text-icon-map text-icon-map-ristoranti">Ristoranti</p>
                                 <p class="text-icon-map-description">
                                     I ristoranti presenti sull'isola cucinano con prodotti
@@ -87,7 +85,7 @@
                         <div class="icon-map">
                             <div class="pointer" onclick="clickMapIcon('trasporti')">
                                 <img class="icon-map-trasporti"
-                                    src="./assets/immagini/live-in-komorebi/icon-transport.svg" alt="icon-transport">
+                                    src="./assets/images/live-in-komorebi/icon-transport.svg" alt="icon-transport">
                                 <p class="text-icon-map text-icon-map-trasporti">Trasporti</p>
                                 <p class="text-icon-map-description">
                                     I veicoli addibiti a trasporto pubblico sono totalmente
@@ -97,7 +95,7 @@
                         </div>
                         <div class="icon-map">
                             <div class="pointer" onclick="clickMapIcon('stazioni')">
-                                <img class="icon-map-stazioni" src="./assets/immagini/live-in-komorebi/icon-station.svg"
+                                <img class="icon-map-stazioni" src="./assets/images/live-in-komorebi/icon-station.svg"
                                     alt="icon-station">
                                 <p class="text-icon-map text-icon-map-stazioni">Stazioni</p>
                                 <p class="text-icon-map-description">
@@ -109,7 +107,7 @@
                         <div class="icon-map">
                             <div class="pointer" onclick="clickMapIcon('infopoint')">
                                 <img class="icon-map-infopoint"
-                                    src="./assets/immagini/live-in-komorebi/icon-infopoint.svg" alt="icon-infopoint">
+                                    src="./assets/images/live-in-komorebi/icon-infopoint.svg" alt="icon-infopoint">
                                 <p class="text-icon-map text-icon-map-infopoint">Infopoint</p>
                                 <p class="text-icon-map-description">In questi Box potrai informarti sui vari servizi e
                                     attività
@@ -118,7 +116,7 @@
                         </div>
                         <div class="icon-map">
                             <div class="pointer" onclick="clickMapIcon('bar')">
-                                <img class="icon-map-bar" src="./assets/immagini/live-in-komorebi/icon-bar.svg"
+                                <img class="icon-map-bar" src="./assets/images/live-in-komorebi/icon-bar.svg"
                                     alt="icon-bar">
                                 <p class="text-icon-map text-icon-map-bar">Bar</p>
                                 <p class="text-icon-map-description">Nei vari bar sparsi sull'isola ci si può rilassare
@@ -130,7 +128,7 @@
                         <div class="icon-map">
                             <div class="pointer" onclick="clickMapIcon('sorgenti')">
                                 <img class="icon-map-sorgenti"
-                                    src="./assets/immagini/live-in-komorebi/icon-sorgenti.svg" alt="icon-sorgenti">
+                                    src="./assets/images/live-in-komorebi/icon-sorgenti.svg" alt="icon-sorgenti">
                                 <p class="text-icon-map text-icon-map-sorgenti">Sorgenti</p>
                                 <p class="text-icon-map-description">L'acqua delle sorgenti è potabile grazie alla
                                     filtrazione
@@ -144,60 +142,60 @@
             </div>
 
             <div class="map-wrapper">
-                <img class="map drop-shadow-img" src="./assets/immagini/live-in-komorebi/img-map.png" alt="img-map"
+                <img class="map drop-shadow-img" src="./assets/images/live-in-komorebi/img-map.png" alt="img-map"
                     style="margin-top: 20px;">
-                <img class="iconOver bar" id="pin-over-map-bar" src="./assets/immagini/live-in-komorebi/pin-map-bar.svg"
+                <img class="iconOver bar" id="pin-over-map-bar" src="./assets/images/live-in-komorebi/pin-map-bar.svg"
                     alt="pin-map-bar">
                 <img class="iconOver bar" id="pin-over-map-bar-2"
-                    src="./assets/immagini/live-in-komorebi/pin-map-bar.svg" alt="pin-map-bar2">
+                    src="./assets/images/live-in-komorebi/pin-map-bar.svg" alt="pin-map-bar2">
                 <img class="iconOver sorgenti" id="pin-over-map-sorgenti"
-                    src="./assets/immagini/live-in-komorebi/pin-map-sorgenti.svg" alt="pin-map-sorgente">
+                    src="./assets/images/live-in-komorebi/pin-map-sorgenti.svg" alt="pin-map-sorgente">
                 <img class="iconOver sorgenti" id="pin-over-map-sorgenti-2"
-                    src="./assets/immagini/live-in-komorebi/pin-map-sorgenti.svg" alt="pin-map-sorgente2">
+                    src="./assets/images/live-in-komorebi/pin-map-sorgenti.svg" alt="pin-map-sorgente2">
                 <img class="iconOver sorgenti" id="pin-over-map-sorgenti-3"
-                    src="./assets/immagini/live-in-komorebi/pin-map-sorgenti.svg" alt="pin-map-sorgenti3">
+                    src="./assets/images/live-in-komorebi/pin-map-sorgenti.svg" alt="pin-map-sorgenti3">
                 <img class="iconOver ristoranti" id="pin-over-map-restaurant"
-                    src="./assets/immagini/live-in-komorebi/pin-map-restaurant.svg" alt="pin-map-restaurant">
+                    src="./assets/images/live-in-komorebi/pin-map-restaurant.svg" alt="pin-map-restaurant">
                 <img class="iconOver ristoranti" id="pin-over-map-restaurant-2"
-                    src="./assets/immagini/live-in-komorebi/pin-map-restaurant.svg" alt="pin-map-restaurant2">
+                    src="./assets/images/live-in-komorebi/pin-map-restaurant.svg" alt="pin-map-restaurant2">
                 <img class="iconOver infopoint" id="pin-over-map-infopoint"
-                    src="./assets/immagini/live-in-komorebi/pin-map-infopoint.svg" alt="pin-map-infopoint">
+                    src="./assets/images/live-in-komorebi/pin-map-infopoint.svg" alt="pin-map-infopoint">
                 <img class="iconOver stazioni" id="pin-over-map-station"
-                    src="./assets/immagini/live-in-komorebi/pin-map-station.svg" alt="pin-map-station">
+                    src="./assets/images/live-in-komorebi/pin-map-station.svg" alt="pin-map-station">
                 <img class="iconOver trasporti" id="pin-over-map-transport"
-                    src="./assets/immagini/live-in-komorebi/pin-map-transport.svg" alt="pin-map-transport">
+                    src="./assets/images/live-in-komorebi/pin-map-transport.svg" alt="pin-map-transport">
                 <img class="iconOver trasporti" id="pin-over-map-transport-2"
-                    src="./assets/immagini/live-in-komorebi/pin-map-transport.svg" alt="pin-map-transport2">
+                    src="./assets/images/live-in-komorebi/pin-map-transport.svg" alt="pin-map-transport2">
             </div>
             <div class="d-md-none">
                 <div class="map-icon-wrapper__mobile">
                     <div class="icon-map pointer" onclick="clickMapIcon('stazioni')">
-                        <img class="icon-map-stazioni" src="./assets/immagini/live-in-komorebi/icon-station.svg"
+                        <img class="icon-map-stazioni" src="./assets/images/live-in-komorebi/icon-station.svg"
                             alt="icon-station">
                         <p class="text-icon-map text-icon-map-stazioni">Stazioni</p>
                     </div>
                     <div class="icon-map pointer" onclick="clickMapIcon('infopoint')">
-                        <img class="icon-map-infopoint" src="./assets/immagini/live-in-komorebi/icon-infopoint.svg"
+                        <img class="icon-map-infopoint" src="./assets/images/live-in-komorebi/icon-infopoint.svg"
                             alt="icon-infopoint">
                         <p class="text-icon-map text-icon-map-infopoint">Infopoint</p>
                     </div>
                     <div class="icon-map pointer" onclick="clickMapIcon('trasporti')">
-                        <img class="icon-map-trasporti" src="./assets/immagini/live-in-komorebi/icon-transport.svg"
+                        <img class="icon-map-trasporti" src="./assets/images/live-in-komorebi/icon-transport.svg"
                             alt="icon-transport">
                         <p class="text-icon-map text-icon-map-trasporti">Trasporti</p>
                     </div>
                     <div class="icon-map pointer" onclick="clickMapIcon('sorgenti')">
-                        <img class="icon-map-sorgenti" src="./assets/immagini/live-in-komorebi/icon-sorgenti.svg"
+                        <img class="icon-map-sorgenti" src="./assets/images/live-in-komorebi/icon-sorgenti.svg"
                             alt="icon-sorgenti">
                         <p class="text-icon-map text-icon-map-sorgenti">Sorgenti</p>
                     </div>
                     <div class="icon-map pointer" onclick="clickMapIcon('ristoranti')">
-                        <img class="icon-map-ristoranti" src="./assets/immagini/live-in-komorebi/icon-restaurant.svg"
+                        <img class="icon-map-ristoranti" src="./assets/images/live-in-komorebi/icon-restaurant.svg"
                             alt="icon-restaurant">
                         <p class="text-icon-map text-icon-map-ristoranti">Ristoranti</p>
                     </div>
                     <div class="icon-map pointer" onclick="clickMapIcon('bar')">
-                        <img class="icon-map-bar" src="./assets/immagini/live-in-komorebi/icon-bar.svg" alt="icon-bar">
+                        <img class="icon-map-bar" src="./assets/images/live-in-komorebi/icon-bar.svg" alt="icon-bar">
                         <p class="text-icon-map text-icon-map-bar">Bar</p>
                     </div>
                 </div>
@@ -208,7 +206,7 @@
             <h2 class="d-md-none text-vf" style="margin-bottom: 20px;">La sorgente</h2>
             <div class="row">
                 <div class="col-12 col-md-6 order-md-2">
-                    <img src="./assets/immagini/live-in-komorebi/img-sorgente.png" class="d-block w-100 drop-shadow-img rounded-image"
+                    <img src="./assets/images/live-in-komorebi/img-sorgente.png" class="d-block w-100 drop-shadow-img rounded-image"
                         alt="img-sorgente">
                 </div>
                 <div class="col-12 col-md-6 order-md-1 my-md-auto">
@@ -234,7 +232,7 @@
             <h2 class="d-md-none text-vf" style="margin-bottom: 20px;">Choose to reuse</h2>
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <img src="./assets/immagini/live-in-komorebi/img-choose-to-reuse.png"
+                    <img src="./assets/images/live-in-komorebi/img-choose-to-reuse.png"
                         class="d-block w-100 drop-shadow-img rounded-image" alt="img-choose-to-reuse">
                 </div>
                 <div class="col-12 col-md-6 my-md-auto">
