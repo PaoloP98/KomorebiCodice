@@ -140,7 +140,7 @@
     .map_section {
         display: flex;
         flex-direction: row;
-        column-gap: 5vw;
+        gap: 5vw;
         align-items: flex-start;
         align-content: flex-start;
     }

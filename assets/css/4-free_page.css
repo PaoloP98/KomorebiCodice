@@ -38,7 +38,7 @@ a:active {
     margin-top: 10px;
     display: flex;
     justify-content: flex-start;
-    column-gap: 55px;
+    gap: 55px;
 }
 
 .house_service img {
