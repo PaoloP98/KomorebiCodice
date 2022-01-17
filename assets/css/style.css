@@ -464,7 +464,8 @@ header .logo {
 .footer .copyright {
     color: var(--resina);
     font-weight: 200;
-    font-size: 12px;
+    /* font-size: 12px; */
+    
 }
 
 .footer .separator {
