@@ -1,9 +1,10 @@
 .means_of_transport .image_wrapper {
     background-image: url("../images/reach_us/Sky.png");
-    background-size: contain;
+    /* background-size: contain; */
+    background-size: auto 80%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 300px;
+    height: 200px;
 }
 
 .transport_carousel_wrapper {
