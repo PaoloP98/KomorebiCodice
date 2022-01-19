@@ -12,6 +12,11 @@ function closeMenu() {
   $('body').css('overflow', 'auto');
 }
 
+$(window).resize(() => {
+  closeMenu();
+});
+
+
 function isHidden(selector) {
   return ($(selector).css('display') == 'none' || $(selector).css("visibility") == "hidden");
 }
