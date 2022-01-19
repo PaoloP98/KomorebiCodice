@@ -43,6 +43,23 @@ html, body {
 /* -------------------------------------------------------------------------- */
 /*                              Ridefinizioni BS                              */
 /* -------------------------------------------------------------------------- */
+
+
+
+.dropdown-item{
+    color: var(--bluNavy);
+}
+.dropdown-menu{
+    background-color: var(--resina);
+}
+.dropdown-item.active {
+    background-color: var(--resina);
+    color: var(--verdeForesta);
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: var(--verdeForesta);
+    background-color: var(--resina);
+}
 .card {
     border: none;
 }
@@ -356,7 +373,7 @@ header .logo {
 }
 
 
-.mobile_menu_ul>li.active a {
+.mobile_menu_ul>li.active .header-link {
     color: var(--melaVerde);
     display: block;
 }
@@ -787,9 +804,6 @@ header .logo {
         margin-left: 10vw;
     }
 
-    .mobile_menu_ul .sub_menu {
-        display: none;
-    }
 
     .mobile_menu_ul>li {
         font-size: calc(0.5rem + 1vw)
@@ -806,7 +820,7 @@ header .logo {
         /* padding: 0 30px; */
     }
 
-    .mobile_menu_ul>li.active a {
+    .mobile_menu_ul>li.active .header-link {
         color: var(--verdeForesta);
     }
 

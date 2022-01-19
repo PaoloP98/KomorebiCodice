@@ -114,27 +114,26 @@
     visibility: hidden;
 }
 
-.map-icon-wrapper__mobile {
+.map-icon-wrapper-mobile {
     display: flex;
     flex-direction: row;
     overflow-x: auto;
 }
-
 /* width */
-::-webkit-scrollbar {
+.map-icon-wrapper-mobile::-webkit-scrollbar {
     width: 3px;
     height: 3px;
 }
-
 /* Track */
-::-webkit-scrollbar-track {
+.map-icon-wrapper-mobile::-webkit-scrollbar-track {
     background: var(--melaVerde);
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+.map-icon-wrapper-mobile::-webkit-scrollbar-thumb {
     background: var(--verdeForesta);
 }
+
 
 @media (min-width:992px) {
     .map_section {

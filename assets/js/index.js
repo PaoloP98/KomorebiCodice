@@ -157,3 +157,12 @@ function clickMapIcon(x) {
     selectedIconLiveKomorebi = "";
   }
 }
+
+
+$('#dropdown-menu-wrapper').hover(function () {
+  $(this).addClass('show');
+  $(this).find('.dropdown-menu').addClass('show');
+}, function () {
+  $(this).removeClass('show');
+  $(this).find('.dropdown-menu').removeClass('show');
+});
